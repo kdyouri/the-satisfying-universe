@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "operation": "content strategy: five rotating categories with performance tracking",
+  "owner_strategy": "Rotate five viral formats across the two daily slots while keeping one recognizable visual identity; analyze performance to progressively favor the most effective formats.",
+  "categories": {
+    "oddly_satisfying": "Perfect cuts, seamless fits, clever mechanisms and satisfying transformations; precise, deliberate motion.",
+    "surreal_impossible": "Impossible scenes, miniature worlds and dreamlike visual illusions that stay coherent.",
+    "hypnotic_visuals": "Liquids, colors, symmetries and repetitive mesmerizing motion.",
+    "ai_comedy_animals": "Animals in human-like situations, gentle visual humor and surprising twists; family-friendly and kind.",
+    "relaxing_magical_worlds": "Miniature gardens, fantastical landscapes, nature and escape; a calm magical atmosphere."
+  },
+  "implementation": {
+    "rotation": "deterministic round-robin keyed on (date, slot): two slots per day cycle through all five categories, anchored 2026-11-06; re-enqueues keep the same theme, so failed slots resume without category drift",
+    "shared_identity": "every creative brief carries the shared TechnoInno identity sentence: one continuous scene, soft cinematic macro lighting, calming palette, realistic physics, no people, no cuts, no text",
+    "schedule_integration": "tsu/jobs.py schedule_production now enqueues the category theme; tomorrow 2026-11-07 = hypnotic_visuals (12:00) and ai_comedy_animals (20:00)",
+    "performance_collection": "tsu/performance.py collects view/like/comment counts for our public videos via the YouTube Data API every 6 hours (Beat task tsu.collect_performance), stored in the analytics table",
+    "report": "python -m tsu.performance --report aggregates per category (videos, total/avg views, likes, comments), sorted by average views",
+    "legacy_videos": "the two pre-strategy public videos report as uncategorized by design; no retro-tagging guessed"
+  },
+  "verification": {
+    "tests": "186 passed, 0 skipped (4 new: rotation determinism/coverage, theme roundtrip, schedule integration, collect+report with fake fetch)",
+    "test_evidence": "docs/evidence/category-strategy-tests-2026-11-06.xml",
+    "deployment": "api + worker + beat images rebuilt and recreated; rotation verified on the worker",
+    "bootstrap_collection": "2 public videos, 6 metrics stored (source youtube-videos-list:2026-11-06)"
+  },
+  "future_decision": "automatic weighting of slots toward top categories is intentionally deferred until roughly two weeks of per-category data exist; until then the rotation stays even and the report guides manual review"
+}

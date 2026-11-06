@@ -97,7 +97,7 @@ def avatar(path, final=800):
     rings = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     dr = ImageDraw.Draw(rings)
     center = size / 2
-    for i, (radius, alpha, width) in enumerate(
+    for _i, (radius, alpha, width) in enumerate(
         [(0.355, 210, 7), (0.415, 140, 6), (0.475, 85, 5), (0.535, 45, 4)]
     ):
         r = radius * size
@@ -158,7 +158,11 @@ def banner(path, width=2560, height=1440):
     for i in range(9):
         r = (0.06 + i * 0.055) * h
         alpha = max(18, 150 - i * 16)
-        dr.ellipse([cx - r, cy - r, cx + r, cy + r], outline=PEARL + (alpha,), width=max(1, h // 480))
+        dr.ellipse(
+            [cx - r, cy - r, cx + r, cy + r],
+            outline=PEARL + (alpha,),
+            width=max(1, h // 480),
+        )
     img = Image.alpha_composite(img, rings.filter(ImageFilter.GaussianBlur(h * 0.004)))
 
     glow2 = Image.new("RGBA", (w, h), (0, 0, 0, 0))

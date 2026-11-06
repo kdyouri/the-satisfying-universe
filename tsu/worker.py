@@ -102,3 +102,23 @@ celery_app.conf.beat_schedule["email-owner-alerts"] = {
     "schedule": 60.0,
     "options": {"expires": 55},
 }
+
+
+@celery_app.task(name="tsu.collect_performance", soft_time_limit=240, time_limit=280)
+def collect_performance():
+    engine = make_engine(settings.database_url.get_secret_value())
+    try:
+        from tsu.performance import collect
+
+        result = collect(settings, engine)
+        logger.info("Performance collection: %s", result)
+        return result
+    finally:
+        engine.dispose()
+
+
+celery_app.conf.beat_schedule["collect-video-performance"] = {
+    "task": "tsu.collect_performance",
+    "schedule": 60.0 * 60 * 6,
+    "options": {"expires": 300},
+}

@@ -2,6 +2,22 @@
 
 Updated: 2026-11-06, Africa/Casablanca.
 
+## Content strategy — five rotating categories with performance tracking
+
+The owner defined five content categories (oddly satisfying, surreal & impossible,
+hypnotic visuals, AI comedy & animals, relaxing & magical worlds) to rotate across the
+two daily slots while keeping one recognizable identity. Implemented: a deterministic
+round-robin keyed on (date, slot) picks each slot's category (tsu/categories.py), and
+schedule_production enqueues that category's theme with a shared TechnoInno identity
+sentence in every brief. Failed slots resume with the same theme. Performance tracking
+is live: a Beat task collects view/like/comment counts for our public videos every six
+hours into the analytics table, and `python -m tsu.performance --report` aggregates
+per category sorted by average views. The two pre-strategy public videos report as
+uncategorized by design. Automatic weighting toward top categories is deliberately
+deferred until about two weeks of data exist. Deployed to api+worker+beat; 186 tests
+pass including four new category/performance tests. Evidence:
+docs/evidence/content-category-strategy-2026-11-06.json.
+
 ## Recurrence ACTIVATED — first scheduled video published publicly
 
 2026-11-06 evening: all readiness blockers cleared and the recurring pipeline is live.

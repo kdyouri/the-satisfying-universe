@@ -2,7 +2,7 @@
   "prepared_on": "2026-11-04",
   "deployed": false,
   "secrets_in_archive": false,
-  "archive_sha256": "bd1f7c2824705c988050b8105cb4361aa763b72a1441a731f7d07f4a59aa3445",
+  "archive_sha256": "e6c161904e858e5ae7204a2c3b51cb565e6254f8ba72bef624c540dd44461cf0",
   "files": [
     {
       "path": "tsu/__init__.py",
@@ -33,6 +33,10 @@
       "sha256": "00ef924d38c6615456bb099bfca13d5ec6b0a4ff8cd45df38f80a4086d0c5d7d"
     },
     {
+      "path": "tsu/categories.py",
+      "sha256": "2b72859610a209f67cc3ddacc67e9693e6750da15ed0ebd4af26f5463dadba9a"
+    },
+    {
       "path": "tsu/config.py",
       "sha256": "584f1776d25641ab3796962bdb02e3ac70547504ac0e733274ba01124d6bc7a9"
     },
@@ -46,7 +50,7 @@
     },
     {
       "path": "tsu/jobs.py",
-      "sha256": "1ff8df5c8aeafe33f9e1255c1569c254d8fa2d78b827b6a0e358e5e397366af1"
+      "sha256": "c9d062be19cb6ca998763ad1cb8ba27a912814461c3da64aad7dbbde97eb79d0"
     },
     {
       "path": "tsu/login.html",
@@ -79,6 +83,10 @@
     {
       "path": "tsu/openrouter.py",
       "sha256": "6cab7daf0c13b771f63d5bed4460dab79344466102e058a0b52128beaf0bdba0"
+    },
+    {
+      "path": "tsu/performance.py",
+      "sha256": "2544e74231b04207937229e24340751b508f5a8691ca1dd7c90ab3bb9127f9a5"
     },
     {
       "path": "tsu/pilot.py",
@@ -114,7 +122,7 @@
     },
     {
       "path": "tsu/worker.py",
-      "sha256": "83a2d13d70a629e3cdfcc2a77974a9344249a66a0d9749d2df972f8bf1718f61"
+      "sha256": "fe6ef09f9ad19449515139d1628f1e557ce6584e65a8081dd226197c3fb52062"
     },
     {
       "path": "tsu/workflow.py",

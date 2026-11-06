@@ -128,6 +128,7 @@ def schedule_day(session: Session, now: datetime, timezone: str) -> list[str]:
 
 def schedule_production(session, now, timezone, times):
     """Only due local slots, with a stable key and private-by-default API separate."""
+    from tsu.categories import category_for, theme_for
     from tsu.workflow import ProductionInput, enqueue
 
     local = now.astimezone(ZoneInfo(timezone))
@@ -141,7 +142,8 @@ def schedule_production(session, now, timezone, times):
             session,
             f"daily:{local.date().isoformat()}:{index + 1}",
             ProductionInput(
-                concept="A fresh original calming satisfying macro scene", visibility="public"
+                concept=theme_for(category_for(local.date().isoformat(), index + 1)),
+                visibility="public",
             ),
         )
         ids.append(job.id)
