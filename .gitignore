@@ -23,3 +23,4 @@ rejected/*
 publications/*
 analytics/*
 !.gitkeep
+.DS_Store
