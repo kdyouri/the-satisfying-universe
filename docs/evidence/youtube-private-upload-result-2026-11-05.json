@@ -1,0 +1,23 @@
+{
+  "http_status": 202,
+  "result": {
+    "publication_id": "0176d10c-b4ce-46ec-8e2a-4817bbd5d93c",
+    "video_id": "qNsEQFHoMdk",
+    "status": "processing_private",
+    "privacy": "private",
+    "requested_privacy": "private",
+    "url": "https://www.youtube.com/watch?v=qNsEQFHoMdk",
+    "last_error": null,
+    "verified": {
+      "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+      "privacy": "private",
+      "title": "Cette spirale dorée est hypnotisante ✨",
+      "upload_status": "uploaded",
+      "processing_status": "processing",
+      "duration": "P0D",
+      "definition": "sd",
+      "synthetic_media": null
+    },
+    "sha256": "29d699d71eb424c369bef415d5191b313f806961aec46907aee5d836a17a4eaf"
+  }
+}

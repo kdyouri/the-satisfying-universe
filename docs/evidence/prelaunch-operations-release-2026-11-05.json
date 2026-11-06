@@ -1,0 +1,65 @@
+{
+  "archive_sha256": "5c78fd38f8db84bd7fb3922e3fc0a87738ad5a24eca9ea221bb1fbdb8972e77d",
+  "files": [
+    {
+      "path": "tsu/config.py",
+      "sha256": "0a20224bdb4e5b87f6229637304758cc07285e0fa7cae9d033c36a8ed768d0bf"
+    },
+    {
+      "path": "tsu/notifications.py",
+      "sha256": "95ec5b8b2ffac2a455e37dabe0b633a43c2da9ab42f71a8e2b5d2af76e0717aa"
+    },
+    {
+      "path": "tsu/worker.py",
+      "sha256": "83a2d13d70a629e3cdfcc2a77974a9344249a66a0d9749d2df972f8bf1718f61"
+    },
+    {
+      "path": "tsu/workflow.py",
+      "sha256": "433b0dddd4d4257b5bf5f9e4cdad5ffabf1e6f197333a1ae82b89b514fbc0bd8"
+    },
+    {
+      "path": "tsu/trial.py",
+      "sha256": "fb862d27431ed03dba82a333019d8b57d951f4b38e9882c9e5358cecb27a60b8"
+    },
+    {
+      "path": "tsu/sound_trial.py",
+      "sha256": "fd9ac82ec636f64c78b615957ce96cc2f74ec99753ec257daadf260cb813bcce"
+    },
+    {
+      "path": "tsu/api.py",
+      "sha256": "370fde48167b28b33a37052d61a9aa846c3fc290df2e86eb4a1b2f9dc302f3a7"
+    },
+    {
+      "path": "tsu/admin.html",
+      "sha256": "a9943a0b2b060d0aa0f2e48eb5f1dbe0b1cfc4535f0b3523c207bf230bbb4a58"
+    },
+    {
+      "path": "tsu/public_information.py",
+      "sha256": "69e320627c924decda146b01d961c7d886bce19c378115fc2398550df8477bd6"
+    }
+  ],
+  "secrets_included": false,
+  "deployed": true,
+  "scheduler_activation": false,
+  "real_email_sends": 0,
+  "paid_requests": 0,
+  "legal_pages_public": false,
+  "api_image_id": "sha256:2b916f3825b2ceb24b11948acbc60a422e015ccb129e47b9a5a0576887e4c9ab",
+  "future_worker_image_id": "sha256:2b916f3825b2ceb24b11948acbc60a422e015ccb129e47b9a5a0576887e4c9ab",
+  "regression_tests_passed": 144,
+  "installed_runtime_checks_passed": 47,
+  "persistent_services": [
+    "api",
+    "postgres",
+    "redis"
+  ],
+  "source_hashes_verified": true,
+  "backup_restore_drill_passed": true,
+  "automatic_offhost_backup_confirmed": false,
+  "outbound_alerts_confirmed": false,
+  "legal_publication_approval_pending": false,
+  "fresh_paid_trial_approval_pending": false,
+  "global_caps_usd": "0",
+  "additional_trial_authorized_cap_usd": "1.00",
+  "public_information_owner_approved": true
+}

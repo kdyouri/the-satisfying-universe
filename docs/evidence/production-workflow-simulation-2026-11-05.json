@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-05",
+  "provider_environment": "local Postman two-provider simulation",
+  "tests_passed": 119,
+  "workflow_tests": 21,
+  "legacy_openrouter_http_scenarios": 14,
+  "observed_http_requests": 597,
+  "openrouter_posts": 112,
+  "youtube_upload_initiations": 14,
+  "real_paid_requests": 0,
+  "real_youtube_uploads": 0,
+  "limitations": "Synthetic media/scores/translations prove caller behavior, not live model quality or durable OAuth.",
+  "local_provider_processes_stopped": true,
+  "disposable_postgresql_stopped": true,
+  "postman_workspace_published": false,
+  "postman_final_status": {
+    "exit_code": 0,
+    "signed_in": false,
+    "shared_workspace_mutations": 0,
+    "earlier_keychain_failure": "historical; not reproduced in final status check"
+  }
+}

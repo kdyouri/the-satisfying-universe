@@ -1,0 +1,9 @@
+NAME                    IMAGE                  COMMAND                  SERVICE    CREATED          STATUS                    PORTS
+technoinno-api-1        technoinno-api         "uvicorn tsu.api:app…"   api        24 seconds ago   Up 22 seconds (healthy)   127.0.0.1:8000->8000/tcp
+technoinno-postgres-1   postgres:17-bookworm   "docker-entrypoint.s…"   postgres   24 hours ago     Up 24 hours (healthy)     5432/tcp
+technoinno-redis-1      redis:7-alpine         "docker-entrypoint.s…"   redis      24 hours ago     Up 24 hours (healthy)     6379/tcp
+sha256:3689bdd10549c4af590461e8dee8b30b0046a0a0467c7dbd1a31aaae3fabc511
+sha256:3689bdd10549c4af590461e8dee8b30b0046a0a0467c7dbd1a31aaae3fabc511
+d823e9a36191dc9c102832a940116f8b46c022fc6ae2729560e6f410241d04e8  tsu/openrouter.py
+6bfbeed8aa44fd9cd93fc40f5c64c782a66125706be260b8fd3333f4ca915a85  tsu/api.py
+6314fbc0ef31e2c7ae406fe272961563ddf1edacdd79c594f7692c98e3b34624  deploy/review-contextual-sound-trial.py

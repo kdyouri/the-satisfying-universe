@@ -1,0 +1,39 @@
+{
+  "source_hashes_match": true,
+  "readiness": {
+    "workflow_implemented": true,
+    "scheduler_enabled": false,
+    "configured_local_times": [],
+    "timezone": "Africa/Casablanca",
+    "blockers": [
+      "spending_not_authorized",
+      "budget_caps_zero",
+      "automatic_publication_not_authorized",
+      "daily_times_not_selected",
+      "durable_google_access_not_confirmed",
+      "complete_live_cycle_not_validated",
+      "automatic_offhost_backup_not_confirmed",
+      "outbound_alert_delivery_not_confirmed"
+    ],
+    "automatic_regeneration": false,
+    "live_validation_completed": false,
+    "outbound_alerts": {
+      "enabled": false,
+      "configured": false,
+      "recipient": "admin.technoinno@gmail.com",
+      "ready": false
+    },
+    "automatic_offhost_backup_confirmed": false
+  },
+  "global_caps_usd": "0",
+  "counts": {
+    "model_usage": 12,
+    "production_jobs": 2,
+    "publications": 2,
+    "video_generations": 4
+  },
+  "confirmed_usd": "1.601434",
+  "real_emails_sent": 0,
+  "paid_requests": 0,
+  "legal_pages_public": false
+}

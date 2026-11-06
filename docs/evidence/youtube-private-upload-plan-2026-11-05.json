@@ -1,0 +1,32 @@
+{
+  "http_status": 200,
+  "result": {
+    "asset": "first_video_balanced_audio_v2",
+    "sha256": "29d699d71eb424c369bef415d5191b313f806961aec46907aee5d836a17a4eaf",
+    "bytes": 17247488,
+    "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+    "duration_seconds": 15.8,
+    "metadata": {
+      "snippet": {
+        "title": "Cette spirale dorée est hypnotisante ✨",
+        "description": "Un mouvement lent, une texture dorée, quelques secondes pour souffler.\n\nCréation visuelle générée avec une IA pour TechnoInno. Musique originale.\n\n#Shorts #Satisfying #OddlySatisfying #TechnoInno",
+        "tags": [
+          "satisfying",
+          "relaxation",
+          "TechnoInno",
+          "shorts"
+        ],
+        "categoryId": "24",
+        "defaultLanguage": "fr"
+      },
+      "status": {
+        "privacyStatus": "private",
+        "selfDeclaredMadeForKids": false,
+        "containsSyntheticMedia": true
+      }
+    },
+    "notify_subscribers": false,
+    "scheduler_enabled": false,
+    "public_publishing": false
+  }
+}

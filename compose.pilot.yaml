@@ -1,0 +1,4 @@
+# One manual first-video process. No worker, Beat, publisher or extra public port.
+services:
+  api:
+    mem_limit: 384m

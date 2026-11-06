@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-04",
+  "method": "Direct dig queries from Mac with network access",
+  "nameservers": [
+    "dns1.registrar-servers.com",
+    "dns2.registrar-servers.com"
+  ],
+  "studio": {
+    "name": "studio.technoinno.live",
+    "A_status": "NXDOMAIN",
+    "authoritative_servers_agree": true,
+    "public_resolvers_agree": [
+      "1.1.1.1",
+      "8.8.8.8"
+    ]
+  },
+  "root": {
+    "name": "technoinno.live",
+    "A_status": "NOERROR",
+    "A_answers": []
+  },
+  "configuration_changes_performed": false,
+  "duplicated_names_found": {
+    "studio.technoinno.live.technoinno.live": "203.161.61.3",
+    "technoinno.live.technoinno.live": "203.161.61.3"
+  },
+  "likely_cause": "Full domain names entered as relative Host values; registrar appended the zone name.",
+  "required_studio_host_field": "studio"
+}

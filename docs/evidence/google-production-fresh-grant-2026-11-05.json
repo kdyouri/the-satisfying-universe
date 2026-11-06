@@ -1,0 +1,15 @@
+{
+  "project_production_status_source": "owner personally confirmed En production",
+  "new_credential_updated_at": "2026-11-05T21:40:08.987655+00:00",
+  "new_oauth_callback_consumed_at": "2026-11-05T21:40:08.060727+00:00",
+  "refresh_token_present": true,
+  "live_token_refresh_passed": true,
+  "expected_channel_read_passed": true,
+  "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+  "handle": "@techno-inno",
+  "required_scopes_present": true,
+  "refresh_token_expiry_seconds_if_reported": null,
+  "account_automatic_publication_approval": false,
+  "new_uploads": 0,
+  "new_paid_calls": 0
+}

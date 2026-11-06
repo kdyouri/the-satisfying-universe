@@ -1,0 +1,25 @@
+{
+  "about": {
+    "status": 200,
+    "public": true,
+    "draft_banner_removed": true
+  },
+  "privacy": {
+    "status": 200,
+    "public": true,
+    "draft_banner_removed": true
+  },
+  "terms": {
+    "status": 200,
+    "public": true,
+    "draft_banner_removed": true
+  },
+  "/admin": {
+    "status": 401,
+    "still_protected": true
+  },
+  "/api/overview": {
+    "status": 401,
+    "still_protected": true
+  }
+}

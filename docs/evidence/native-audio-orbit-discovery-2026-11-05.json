@@ -1,0 +1,45 @@
+{
+  "http_status": 200,
+  "response": {
+    "data": [
+      {
+        "resourceType": "endpoint",
+        "id": "urn:orbit:endpoint:v1:aNKmVBIzTZX0heGqhYyA17UyXDbaKcOz:openrouter:submit-a-video-generatio",
+        "name": "Submit a video generation request",
+        "description": "Submit a video generation request\nSubmits a video generation request and returns a polling URL to check status\nResponse Codes\n\n202 Video generation request accepted\n400 Bad Request - Invalid request parameters or malformed input\n401 Unauthorized - Authentication required or invalid credentials\n402 Payment Required - Insufficient credits or quota to complete request\n403 Forbidden - Authentication successful but insufficient permissions\n404 Not Found - Resource does not exist\n413 Payload Too Large - Request payload exceeds size limits\n429 Too Many Requests - Rate limit exceeded\n500 Internal Server Error - Unexpected server error\n\nResponse fields\nDerived from the spec's response schema.\n202 Video generation request accepted (object)\n| Field | Type | Required | Values | Description |\n|---|---|---|---|---|\n| error | string | No |  |  |\n| expires_at | integer | No |  | Unix timestamp in seconds when OpenRouter's stored copy of the outputs stops being available. Present only when that co\u2026 |\n| generation_id | string | No |  | The generation ID associated with this video generation job. Available once the job has been processed. |\n| id | string | Yes |  | The video job ID, in the gen-vid-<timestamp>-<20 alphanumerics> generation ID format. Pass it as previous_job_id to\u2026 |\n| polling_url | string | Yes |  |  |\n| status | string | Yes | pending, in_progress, completed, failed, cancelled, expired |  |\n| unsigned_urls[] | array of string | No |  |  |\n| usage | object | No |  | Usage and cost information for the video generation. Available once the job has completed. |\n| usage.cost | number (double) or null | No |  | The cost of the video generation in USD. |\n| usage.is_byok | boolean | No |  | Whether the request was made using a Bring Your Own Key configuration. |",
+        "method": "POST",
+        "url": "https://openrouter.ai/api/v1/videos",
+        "evaluateGuide": "Starts a video generation job through OpenRouter and returns a polling URL for tracking it.\nUse for: submit video generation, start a video job, obtain polling URL\nNot supported: checking job status, downloading video content, listing models",
+        "provider": "OpenRouter",
+        "product": "OpenRouter"
+      },
+      {
+        "resourceType": "endpoint",
+        "id": "urn:orbit:endpoint:v1:aNKmVBIzTZerBejo9dyTHeKTLeercTbk:openrouter:download-generated-video",
+        "name": "Download generated video content",
+        "description": "Download generated video content\nStreams the generated video content from the upstream provider\nParameters\n| Name | In | Required | Description |\n|---|---|---|---|\n| jobId | path | Yes |  |\nResponse Codes\n\n200 Video content stream. The body is the raw video bytes proxied from the upstream provider, and the Co\n400 Bad Request - Invalid request parameters or malformed input\n401 Unauthorized - Authentication required or invalid credentials\n403 Forbidden - Authentication successful but insufficient permissions\n404 Not Found - Resource does not exist\n409 Conflict - Resource conflict or concurrent modification\n410 Gone - Endpoint has been permanently removed or deprecated\n500 Internal Server Error - Unexpected server error\n502 Bad Gateway - Provider/upstream API failure",
+        "method": "GET",
+        "url": "https://openrouter.ai/api/v1/videos/job-abc123/content",
+        "evaluateGuide": "Streams the generated video bytes for a specified job through OpenRouter.\nUse for: download generated video, retrieve video bytes, save completed output\nNot supported: starting generation, checking job status, listing video models",
+        "provider": "OpenRouter",
+        "product": "OpenRouter"
+      },
+      {
+        "resourceType": "endpoint",
+        "id": "urn:orbit:endpoint:v1:aNKmVBIzTZdY5o5YxadSF3WSLEl96N5a:openrouter:list-all-video-generatio",
+        "name": "List all video generation models",
+        "description": "List all video generation models\nReturns a list of all available video generation models and their properties\nParameters\n| Name | In | Required | Description |\n|---|---|---|---|\n| HTTP-Referer | header | No | The app identifier should be your app's URL and is used as the primary identifier for rankings. This is used to track AP |\n| X-OpenRouter-Title | header | No | The app display name allows you to customize how your app appears in OpenRouter's dashboard.  |\n| X-OpenRouter-Categories | header | No | Comma-separated list of app categories (e.g. \"cli-agent,cloud-agent\"). Used for marketplace rankings.  |\nResponse Codes\n\n200 Returns a list of video generation models\n400 Bad Request - Invalid request parameters or malformed input\n500 Internal Server Error - Unexpected server error\n\nResponse fields\nDerived from the OpenAPI response schema.\n200 Returns a list of video generation models (object)\n| Field | Type | Required | Values | Description |\n|---|---|---|---|---|\n| data[] | array of object | Yes |  |  |\n| data[].allowed_passthrough_parameters[] | array of string | Yes |  | List of parameters that are allowed to be passed through to the provider |\n| data[].canonical_slug | string | Yes |  | Canonical slug for the model |\n| data[].created | integer | Yes |  | Unix timestamp of when the model was created |\n| data[].creativity[] | array of integer | Yes |  | Supported creativity levels for video upscaling models |\n| data[].description | string | No |  | Description of the model |\n| data[].generate_audio | boolean or null | Yes |  | Whether the model supports generating audio alongside video |\n| data[].hugging_face_id | string or null | No |  | Hugging Face model identifier, if applicable |\n| data[].id | string | Yes |  | Unique identifier for the model |\n| data[].name | string | Yes |  | Display name of the model |\n| data[].pricing_skus | object or null | No |  | Pricing SKUs with provider prefix stripped, values as strings |\n| data[].seed | boolean or null | Yes |  | Whether the model supports deterministic generation via seed parameter |\n| data[].supported_aspect_ratios[] | array of string | Yes | 16:9, 9:16, 1:1, 4:3, 3:4, 3:2, 2:3, 21:9 (+1 more) | Supported output aspect ratios |\n| data[].supported_durations[] | array of integer | Yes |  | Supported video durations in seconds |\n| data[].supported_frame_images[] | array of string | Yes | firstframe, lastframe | Supported frame image types (e.g. firstframe, lastframe) |\n| data[].supported_resolutions[] | array of string | Yes | 360p, 480p, 720p, 768p, 1080p, 1K, 2K, 4K | Supported output resolutions |\n| data[].supported_sizes[] | array of string | Yes | 360x360, 360x480, 360x540, 360x640, 360x840, 480x360, 480x480, 480x640 (+63 more) | Supported output sizes (width x height) |\n| data[].upscale_factor | object or null | Yes |  | Supported upscale factor range for video upscaling models |\n| data[].upscale_factor.max | number (double) or null | No |  |  |\n| data[].upscale_factor.min | number (double) or null | No |  |  |",
+        "method": "GET",
+        "url": "https://openrouter.ai/api/v1/videos/models",
+        "evaluateGuide": "Returns the video generation models available through OpenRouter, including their properties.\nUse for: list video models, inspect model properties, discover generation options\nNot supported: submitting generation jobs, checking job status, downloading video content",
+        "provider": "OpenRouter",
+        "product": "OpenRouter"
+      }
+    ],
+    "meta": {
+      "q": "OpenRouter video generation single continuous video native synchronized audio supported durations and pricing discovery",
+      "total": 3,
+      "nextCursor": "eyJmcm9tIjozfQ=="
+    }
+  }
+}

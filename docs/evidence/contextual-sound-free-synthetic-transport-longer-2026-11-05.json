@@ -1,0 +1,11 @@
+{
+  "no_real_api_key_used": true,
+  "invalid_model": true,
+  "new_paid_calls": 0,
+  "body_bytes": 4805581,
+  "synthetic_data_only": true,
+  "user_media_transmitted": false,
+  "send_timeout_seconds": 60,
+  "http_status": 401,
+  "elapsed_seconds": 51.68
+}

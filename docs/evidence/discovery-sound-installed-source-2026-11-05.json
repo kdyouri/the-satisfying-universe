@@ -1,0 +1,15 @@
+{
+  "installed_source_hashes": {
+    "tsu/youtube_metadata.py": "0392fa5856b5a277deac8bc8fe0452fe80113d4121ae7c4109471e2f5941db0e",
+    "tsu/sound_design.py": "ec29636679c599184a7e3cf9ee52accb3d3b36c2d8b11a7fce08d9025ce0a3dd",
+    "tsu/production.py": "e1efabd3a10aedc552b4691b5db468f1f62d038290b1fdaeeffb145b142eb322",
+    "tsu/pilot.py": "cb028ca7e4332bdb2a68ebb45ad670876dd60691ab263cd9f0ff05079be9d1a9",
+    "tsu/workflow.py": "f1bb1c9fa931fa3efdccf039df7e4e7c5f178b9775cc495e30130c3dba8fa7c2",
+    "tsu/config.py": "dcb8a0414b4f6107295ef6dd228957b3c45f174d92efe03ea1fe1ac753f344ab",
+    "tsu/admin.html": "fd30e29d8a8e9d27055bbe648180cc091fd28a53139e537c8f2a258c19f50ba9",
+    "tsu/youtube_job.py": "cec9c2a0c39ea033f10045baf775396a5e0280707a52261dc86f49cf88138951"
+  },
+  "match_tested_source": true,
+  "new_paid_calls": 0,
+  "scheduler_enabled": false
+}

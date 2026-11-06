@@ -1,0 +1,37 @@
+{
+  "operation": "owner:native-audio-private-trial:v1",
+  "theme": "Individual clear water droplets fall slowly into a shallow dark-blue ceramic dish. One continuous fixed macro view with simple realistic ripples and soft studio light. Generate synchronized subtle water-drop sounds natively with the video; no music, speech, people, cuts or transitions.",
+  "channel": "@techno-inno",
+  "visibility": "private",
+  "maximum_additional_usd": "1.70",
+  "maximum_reserved_stages_usd": "1.66",
+  "profile": {
+    "version": "native_audio_v4",
+    "model": "google/gemini-omni-1.2-flash",
+    "duration": 15,
+    "resolution": "1080p",
+    "aspect_ratio": "9:16",
+    "generate_audio": true,
+    "duration_seconds": 15,
+    "clip_count": 1,
+    "audio_mode": "native_ai_generated_audio",
+    "postproduction": false,
+    "master_preserved": true,
+    "background_music": false,
+    "minimum_score": 80,
+    "minor_defects_tolerated": true,
+    "automatic_regeneration": false,
+    "maximum_generation_usd": "1.60",
+    "live_validation_completed": false
+  },
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "zh-CN"
+  ],
+  "hashtags_in_all_descriptions": true,
+  "scheduler_activation": false
+}

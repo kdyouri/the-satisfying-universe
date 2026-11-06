@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "operation": "owner:native-audio-private-trial:v2",
+  "owner_instruction": "Nouvel essai de génération vidéo de A à Z puis téléversement en privé sur YouTube",
+  "authorization": {
+    "maximum_additional_usd": "2.00",
+    "theme": "free subject chosen by the creative model, avoiding recent concepts",
+    "channel": "@techno-inno",
+    "visibility": "private",
+    "duration_seconds": 15,
+    "resolution": "1080p",
+    "aspect_ratio": "9:16",
+    "generate_audio": true,
+    "postproduction": false,
+    "scheduler_activation": false,
+    "authorization_reference": "owner-instruction-2026-11-06-native-trial-v2-cap-2usd"
+  },
+  "pre_failed_v1_reconciliation": {
+    "remote_generation_id": "gen-vid-1793971997-6fSdhQqmah3MmEXrPosC",
+    "provider_status": "failed",
+    "provider_error": "Video generation failed",
+    "usage_cost_evidence": false,
+    "reservation_usd": "1.563840",
+    "reservation_action": "retained; no release without per-request cost evidence",
+    "v1_job_status": "owner_attention",
+    "resubmission": "prohibited and not attempted"
+  },
+  "deployment": {
+    "api_image": "sha256:4558616ae9b69401c8af21d22d1d0580eef85c6436a75c24abdea964885d9394",
+    "source_rollback": "/opt/technoinno/deploy-backups/native-trial-v2-20261106",
+    "changed_files_sha256": {
+      "tsu/trial_policy.py": "38ea2d686c8de31dea5698b68bd02100f972d409174a0194bf2ddba6605fd9ae",
+      "tsu/trial.py": "7fef8ffec851e4aa070301e671094a45f626511874ffd9670c0945741182bff2",
+      "tsu/native_trial.py": "a10b1bee8b60a6f5986062fcddd2d91a4a90ef2297279fc646eb2989e24842a1"
+    },
+    "local_regression_tests": "178 passed, 0 skipped",
+    "test_evidence": "docs/evidence/native-v2-scope-tests-2026-11-06.xml"
+  },
+  "free_preflight": {
+    "global_flags_off": true,
+    "budget_caps_zero": true,
+    "openrouter_key_ok": true,
+    "model_supports_15s_1080p_916_audio": true,
+    "model_expiration": null,
+    "quoted_generation_usd": "1.563840",
+    "quote_within_1_60_ceiling": true,
+    "creative_model_structured_outputs": true,
+    "quality_model_video_input": true,
+    "youtube_refresh_ok": true,
+    "youtube_channel_match": true,
+    "youtube_handle": "@techno-inno",
+    "checked_at": "2026-11-06T14:36:52Z"
+  },
+  "planned_stages_reserved_usd": {
+    "creative_max": "0.01",
+    "generation_max": "1.60",
+    "quality_review_max": "0.05"
+  },
+  "prohibitions": [
+    "no automatic retry or regeneration of a failed or uncertain paid call",
+    "no release of any existing reservation",
+    "no public upload; private only",
+    "global recurring flags and caps remain off/zero"
+  ]
+}

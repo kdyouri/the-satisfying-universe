@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-11-04",
+  "host": "203.161.61.3",
+  "external_tcp_reachable": {
+    "22": true,
+    "80": true,
+    "8000": false,
+    "5432": false,
+    "6379": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "verified_on": "2026-11-04",
+  "configured_candidates": {
+    "CREATIVE_MODEL": "google/gemma-4-26b-a4b-it",
+    "QUALITY_MODEL": "google/gemini-3.1-flash-lite",
+    "VIDEO_MODEL": "google/veo-3.1-lite"
+  },
+  "database_ready": true,
+  "youtube_connected": true,
+  "youtube_handle": "@techno-inno",
+  "spending_authorized": false,
+  "publishing_authorized": false,
+  "daily_scheduler_enabled": false,
+  "daily_cap_usd": "0",
+  "monthly_cap_usd": "0",
+  "generation_available": false,
+  "publishing_available": false,
+  "paid_requests": 0,
+  "uploads": 0
+}

@@ -1,0 +1,30 @@
+{
+  "archive_sha256": "d2fdfb44baa0ed633f6f336beb7f452f657c757a752b5342cc552af666e05d0b",
+  "files": {
+    "tsu/openrouter.py": "d823e9a36191dc9c102832a940116f8b46c022fc6ae2729560e6f410241d04e8",
+    "deploy/review-contextual-sound-trial.py": "6314fbc0ef31e2c7ae406fe272961563ddf1edacdd79c594f7692c98e3b34624"
+  },
+  "existing_api_sha256": "6bfbeed8aa44fd9cd93fc40f5c64c782a66125706be260b8fd3333f4ca915a85",
+  "large_inline_video_connect_send_budget_seconds": 120,
+  "existing_read_deadline_preserved": true,
+  "automatic_paid_retry": false,
+  "secrets_included": false,
+  "deployed": true,
+  "fresh_google_grant_verified": true,
+  "next_paid_review_authorized": false,
+  "regression_tests_passed": 148,
+  "regression_seconds": "111.066",
+  "api_image_id": "sha256:3689bdd10549c4af590461e8dee8b30b0046a0a0467c7dbd1a31aaae3fabc511",
+  "future_worker_image_id": "sha256:3689bdd10549c4af590461e8dee8b30b0046a0a0467c7dbd1a31aaae3fabc511",
+  "source_hashes_verified": true,
+  "global_caps_usd": "0",
+  "scheduler_enabled": false,
+  "authorization_evidence": "docs/evidence/contextual-sound-transport-fixed-owner-consent-2026-11-05.json",
+  "last_review_authorization_consumed": true,
+  "last_review_http_status": 200,
+  "last_review_score": 90,
+  "last_review_decision": "manual_review",
+  "trial_actual_usd": "0.801011",
+  "trial_held_usd": "0.10",
+  "new_uploads": 0
+}

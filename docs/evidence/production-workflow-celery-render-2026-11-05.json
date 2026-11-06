@@ -1,0 +1,25 @@
+{
+  "synthetic_media_only": true,
+  "real_provider_calls": 0,
+  "new_publications": 0,
+  "technical_pass": true,
+  "duration_seconds": 15.8,
+  "resolution": "1080x1920",
+  "final_and_review_audio": "AAC, audible final checked",
+  "worker_memory_limit_mib": 512.0,
+  "worker_cgroup_peak_mib": 394.95,
+  "maximum_ffmpeg_child_rss_mib": 267.14,
+  "actual_celery_prefork_task": true,
+  "memory_events": {
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 0
+  },
+  "temporary_worker_stopped": true,
+  "persistent_services": [
+    "api",
+    "postgres",
+    "redis"
+  ],
+  "available_host_memory_during_probe_mib": 350
+}

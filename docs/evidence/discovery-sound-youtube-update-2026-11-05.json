@@ -1,0 +1,53 @@
+{
+  "authorization": "Owner request 2026-11-05: add hashtags to descriptions",
+  "update": {
+    "video_id": "G9wNpynDbPY",
+    "url": "https://www.youtube.com/watch?v=G9wNpynDbPY",
+    "privacy": "private",
+    "translations_verified": true,
+    "localizations": {
+      "en": {
+        "title": "Ceramic Leaf Water Droplet",
+        "description": "A macro view of a clear water droplet gliding through the groove of a blue ceramic leaf. AI-generated visuals for TechnoInno and original calm music.\n\n#macro #cinematic #Satisfying #Shorts #TechnoInno"
+      },
+      "fr": {
+        "title": "Goutte d'eau sur feuille de céramique",
+        "description": "Une vue macro d'une goutte d'eau claire glissant dans le sillon d'une feuille en céramique bleue. Visuels générés par IA pour TechnoInno et musique calme originale.\n\n#macro #cinematic #Satisfying #Shorts #TechnoInno"
+      },
+      "es": {
+        "title": "Gota de agua en hoja cerámica",
+        "description": "Una vista macro de una gota de agua clara deslizándose por el surco de una hoja de cerámica azul. Visuales de IA para TechnoInno y música calmada original.\n\n#macro #cinematic #Satisfying #Shorts #TechnoInno"
+      },
+      "it": {
+        "title": "Goccia d'acqua su foglia di ceramica",
+        "description": "Una vista macro di una goccia d'acqua limpida che scivola nel solco di una foglia di ceramica blu. Visual AI per TechnoInno e musica rilassante originale.\n\n#macro #cinematic #Satisfying #Shorts #TechnoInno"
+      },
+      "ru": {
+        "title": "Капля воды на керамическом листе",
+        "description": "Макроплан чистой капли воды, скользящей по желобку синего керамического листа. Визуал ИИ для TechnoInno и оригинальная спокойная музыка.\n\n#macro #cinematic #Satisfying #Shorts #TechnoInno"
+      },
+      "zh-CN": {
+        "title": "陶瓷叶上的水滴",
+        "description": "微距镜头展示一颗清澈的水滴在蓝色陶瓷叶的纹理中缓缓滑行。TechnoInno 的 AI 生成视觉效果及原创舒缓音乐。\n\n#macro #cinematic #Satisfying #Shorts #TechnoInno"
+      }
+    },
+    "tags": [
+      "TechnoInno",
+      "satisfying",
+      "shorts",
+      "macro",
+      "cinematic"
+    ],
+    "new_uploads": 0,
+    "new_ai_calls": 0
+  },
+  "counts_before_and_after": {
+    "usages": 12,
+    "generations": 4,
+    "publications": 2,
+    "actual_usd": "1.601434",
+    "held_usd": "0.200000"
+  },
+  "original_media_and_quality_record_preserved": true,
+  "recurring_controls_remain_disabled": true
+}

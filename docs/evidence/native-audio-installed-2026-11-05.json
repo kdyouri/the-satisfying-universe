@@ -1,0 +1,71 @@
+{
+  "source_hashes": {
+    "tsu/native_profile.py": "4c55503b98ae80f98d6f7a8ac2d247bcbee3e2b2bf23cd42869e953f9c507ec5",
+    "tsu/native_production.py": "9fcfc6f53f1e186945bc80e23e0392ad6771fe5400eb856d1db5a00f1cdb915e",
+    "tsu/workflow.py": "74351bbf49a80b8728da0a32a01fbf0f9590a4e523eab0bb9f15b8d41850b32b",
+    "tsu/pilot.py": "a71b783f8f51f218a4dab872b8cb86bdeeb9b904128bc2582cc7b6c99a6d9af7",
+    "tsu/media.py": "ac095a69a0ac9a631ddc0c5c6dd22147edc4d88bb8efebe447f391afd59dde36",
+    "tsu/config.py": "584f1776d25641ab3796962bdb02e3ac70547504ac0e733274ba01124d6bc7a9",
+    "tsu/production.py": "75fcc6b93c801de4f9463b31894f7e5e8686555971ea297fca0f28ec19a2d8d8",
+    "tsu/youtube_upload.py": "5f3bfcd5fe89a40de3a3ed035fc41560d7b57623331707e6ccfd2f8a07387c04",
+    "tsu/youtube_job.py": "b610017e722b63a15c6894647a7d0b395bb8f2b5fcdbdf4e743099d813c36326",
+    "tsu/trial.py": "5656608f19b54f11196ca49b2cfb9499b60159f663aeab5bfd85aad63326165a",
+    "tsu/admin.html": "963bb40ff7c78c21d07d886f3b3200e50a43e3d054332cd0d4ae2ebb685d8059"
+  },
+  "source_hashes_match": true,
+  "future_profile": {
+    "version": "native_audio_v4",
+    "model": "google/gemini-omni-1.2-flash",
+    "duration": 15,
+    "resolution": "1080p",
+    "aspect_ratio": "9:16",
+    "generate_audio": true,
+    "duration_seconds": 15,
+    "clip_count": 1,
+    "audio_mode": "native_ai_generated_audio",
+    "postproduction": false,
+    "master_preserved": true,
+    "background_music": false,
+    "minimum_score": 80,
+    "minor_defects_tolerated": true,
+    "automatic_regeneration": false,
+    "maximum_generation_usd": "1.60",
+    "live_validation_completed": false
+  },
+  "discarded_job_blocked": true,
+  "readiness": {
+    "workflow_implemented": true,
+    "scheduler_enabled": false,
+    "configured_local_times": [],
+    "timezone": "Africa/Casablanca",
+    "blockers": [
+      "spending_not_authorized",
+      "budget_caps_zero",
+      "automatic_publication_not_authorized",
+      "daily_times_not_selected",
+      "complete_live_cycle_not_validated",
+      "automatic_offhost_backup_not_confirmed",
+      "outbound_alert_delivery_not_confirmed"
+    ],
+    "automatic_regeneration": false,
+    "live_validation_completed": false,
+    "outbound_alerts": {
+      "enabled": false,
+      "configured": false,
+      "recipient": "admin.technoinno@gmail.com",
+      "ready": false
+    },
+    "automatic_offhost_backup_confirmed": false
+  },
+  "counts": {
+    "model_usage": 18,
+    "production_jobs": 3,
+    "publications": 2,
+    "video_generations": 6
+  },
+  "confirmed_usd_preserved": "2.402445",
+  "held_usd_preserved": "0.300000",
+  "verification_paid_requests": 0,
+  "new_uploads": 0,
+  "real_emails_sent": 0
+}

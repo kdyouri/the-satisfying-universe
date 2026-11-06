@@ -1,0 +1,18 @@
+version: 1
+id: 5a1fb643-77a3-44c3-b59c-0f39578b1fa3
+name: google-youtube
+slug: google-youtube
+protocol: http
+interceptRequests: true
+origin:
+  - oauth2.googleapis.com
+  - www.googleapis.com
+port: 4500
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true
+generatedFrom:
+  type: spec
+  mode: static
+  path: ../../contracts/google-youtube.openapi.yaml

@@ -1,0 +1,14 @@
+{
+  "operation": "owner:contextual-sound-private-trial:v1",
+  "additional_stage": "quality_contextual_audio_v3_supervised1",
+  "owner_reply": "Oui, un contrôle supplémentaire dans le plafond de 1 USD",
+  "maximum_additional_review_calls": 1,
+  "maximum_additional_reservation_usd": "0.05",
+  "maximum_trial_exposure_after_reservation_usd": "0.900174",
+  "maximum_authorized_trial_usd": "1.00",
+  "original_uncertain_reservation_preserved": true,
+  "private_upload_if_approved": true,
+  "new_video_generations_authorized": false,
+  "scheduler_activation_authorized": false,
+  "post_production_google_reconnect": "not completed: owner reports admin access problem"
+}

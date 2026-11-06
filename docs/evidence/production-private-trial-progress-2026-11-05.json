@@ -1,0 +1,221 @@
+{
+  "observed_at": "2026-11-05T20:17:15.879890+00:00",
+  "job_id": "a13b3205-90ae-49ef-8675-24bd919ff709",
+  "status": "completed_private",
+  "reason": null,
+  "calls": {
+    "creative": "done",
+    "quality_balanced_audio_v2": "submitting",
+    "quality_balanced_audio_v2_supervised_recovery1": "submitting",
+    "quality_balanced_audio_v2_supervised_diagnostic1": "submitting",
+    "quality_balanced_audio_v2_supervised_corrected1": "done"
+  },
+  "confirmed_trial_cost_usd": "0.800908",
+  "held_trial_reservations_usd": "0.140000",
+  "trial_cap_usd": "1.00",
+  "charges": [
+    {
+      "purpose": "creative",
+      "model": "google/gemma-4-26b-a4b-it",
+      "status": "settled",
+      "actual_usd": "0.000132",
+      "reserved_usd": "0.010000"
+    },
+    {
+      "purpose": "video",
+      "model": "google/veo-3.1-lite",
+      "status": "settled",
+      "actual_usd": "0.400000",
+      "reserved_usd": "0.400000"
+    },
+    {
+      "purpose": "video",
+      "model": "google/veo-3.1-lite",
+      "status": "settled",
+      "actual_usd": "0.400000",
+      "reserved_usd": "0.400000"
+    },
+    {
+      "purpose": "quality_balanced_audio_v2",
+      "model": "google/gemini-3.1-flash-lite",
+      "status": "reserved",
+      "actual_usd": null,
+      "reserved_usd": "0.050000"
+    },
+    {
+      "purpose": "quality_balanced_audio_v2_supervised_recovery1",
+      "model": "google/gemini-3.1-flash-lite",
+      "status": "reserved",
+      "actual_usd": null,
+      "reserved_usd": "0.050000"
+    },
+    {
+      "purpose": "quality_balanced_audio_v2_supervised_diagnostic1",
+      "model": "google/gemini-3.1-flash-lite",
+      "status": "reserved",
+      "actual_usd": null,
+      "reserved_usd": "0.040000"
+    },
+    {
+      "purpose": "quality_balanced_audio_v2_supervised_corrected1",
+      "model": "google/gemini-3.1-flash-lite",
+      "status": "settled",
+      "actual_usd": "0.000776",
+      "reserved_usd": "0.050000"
+    }
+  ],
+  "generations": [
+    {
+      "clip": 1,
+      "status": "completed",
+      "remote_id_saved": true
+    },
+    {
+      "clip": 2,
+      "status": "completed",
+      "remote_id_saved": true
+    }
+  ],
+  "concept": "A single clear water droplet rolling slowly along the groove of a blue ceramic leaf with realistic physics and cinematic macro lighting.",
+  "localizations": {
+    "en": {
+      "title": "Ceramic Leaf Water Droplet",
+      "description": "A macro view of a clear water droplet gliding through the groove of a blue ceramic leaf. AI-generated visuals for TechnoInno and original calm music."
+    },
+    "fr": {
+      "title": "Goutte d'eau sur feuille de céramique",
+      "description": "Une vue macro d'une goutte d'eau claire glissant dans le sillon d'une feuille en céramique bleue. Visuels générés par IA pour TechnoInno et musique calme originale."
+    },
+    "es": {
+      "title": "Gota de agua en hoja cerámica",
+      "description": "Una vista macro de una gota de agua clara deslizándose por el surco de una hoja de cerámica azul. Visuales de IA para TechnoInno y música calmada original."
+    },
+    "it": {
+      "title": "Goccia d'acqua su foglia di ceramica",
+      "description": "Una vista macro di una goccia d'acqua limpida che scivola nel solco di una foglia di ceramica blu. Visual AI per TechnoInno e musica rilassante originale."
+    },
+    "ru": {
+      "title": "Капля воды на керамическом листе",
+      "description": "Макроплан чистой капли воды, скользящей по желобку синего керамического листа. Визуал ИИ для TechnoInno и оригинальная спокойная музыка."
+    },
+    "zh-CN": {
+      "title": "陶瓷叶上的水滴",
+      "description": "微距镜头展示一颗清澈的水滴在蓝色陶瓷叶的纹理中缓缓滑行。TechnoInno 的 AI 生成视觉效果及原创舒缓音乐。"
+    }
+  },
+  "result": {
+    "job_id": "a13b3205-90ae-49ef-8675-24bd919ff709",
+    "video_id": "1bc12696-3635-41c5-853b-03626f385cd6",
+    "file": "/data/jobs/a13b3205-90ae-49ef-8675-24bd919ff709/first-video.mp4",
+    "title": "Ceramic Leaf Water Droplet",
+    "sha256": "9f1babe950ef63a4f1ec0294c02a3021dee794218c89420b5accf202293416f6",
+    "technical_pass": true,
+    "quality_score": 91,
+    "quality_pass": true,
+    "quality_decision": "accepted",
+    "production_profile": {
+      "version": "balanced_audio_v2",
+      "audio_mode": "calm_music_in_postproduction",
+      "audio_ready": true,
+      "audio_target_lufs": -24,
+      "native_generated_audio": false,
+      "crossfade_seconds": 0.2,
+      "quality_minimum_score": 80,
+      "quality_visibility": "normal_playback_on_phone",
+      "minor_defects": "accepted",
+      "visible_major_defects": "timestamped_evidence_required",
+      "repair_priority": "local_edit",
+      "uncertain_findings": "manual_review",
+      "automatic_regeneration": false,
+      "duration_seconds": 15.8,
+      "soundtrack_sha256": "df049ef9572d4353d1e2b344a6653bef63bfd2be898bba6a33823e3194945f2d",
+      "soundtrack_source": "original local synthesis; no external samples"
+    },
+    "issues": [
+      {
+        "start_seconds": 9.2,
+        "end_seconds": 15.8,
+        "severity": "minor",
+        "visibility": "normal_playback",
+        "remedy": "manual_review",
+        "description": "Une nouvelle goutte d'eau apparaît soudainement de manière artificielle, ce qui rompt la fluidité de l'animation.",
+        "evidence": "La goutte apparaît brusquement en haut de l'écran, sans origine claire ni mouvement naturel venant du haut du cadre."
+      }
+    ],
+    "severe_defects": [],
+    "actual_cost_usd": "0.800908",
+    "unsettled_reservations": 3,
+    "published": false,
+    "scheduler_enabled": false,
+    "automatic_regeneration": false
+  },
+  "supervised_review_recovery": {
+    "stage": "quality_balanced_audio_v2_supervised_corrected1",
+    "scope": "same private trial, original owner 1 USD cap",
+    "uncertain_original_preserved": true
+  },
+  "publication_result": {
+    "publication_id": "2a378d50-3ba0-4f3d-856d-f2747b6b9eff",
+    "video_id": "G9wNpynDbPY",
+    "status": "processed_private",
+    "privacy": "private",
+    "requested_privacy": "private",
+    "url": "https://www.youtube.com/watch?v=G9wNpynDbPY",
+    "last_error": null,
+    "verified": {
+      "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+      "privacy": "private",
+      "title": "Ceramic Leaf Water Droplet",
+      "upload_status": "processed",
+      "processing_status": "succeeded",
+      "duration": "PT16S",
+      "definition": "hd",
+      "synthetic_media": null
+    },
+    "sha256": "9f1babe950ef63a4f1ec0294c02a3021dee794218c89420b5accf202293416f6",
+    "languages": [
+      "en",
+      "fr",
+      "es",
+      "it",
+      "ru",
+      "zh-CN"
+    ],
+    "translations_verified": true
+  },
+  "quality": {
+    "score": 91,
+    "technical_pass": true,
+    "approved": true,
+    "details": {
+      "visual_realism": 23,
+      "motion_quality": 17,
+      "aesthetic_quality": 19,
+      "prompt_compliance": 18,
+      "technical_quality": 14,
+      "technical_pass": true,
+      "severe_defects": [],
+      "issues": [
+        {
+          "start_seconds": 9.2,
+          "end_seconds": 15.8,
+          "severity": "minor",
+          "visibility": "normal_playback",
+          "remedy": "manual_review",
+          "description": "Une nouvelle goutte d'eau apparaît soudainement de manière artificielle, ce qui rompt la fluidité de l'animation.",
+          "evidence": "La goutte apparaît brusquement en haut de l'écran, sans origine claire ni mouvement naturel venant du haut du cadre."
+        }
+      ],
+      "audio_coherence": "coherent"
+    }
+  },
+  "publication": {
+    "status": "processed_private",
+    "url": "https://www.youtube.com/watch?v=G9wNpynDbPY",
+    "remote_id": "G9wNpynDbPY"
+  },
+  "global_confirmed_ai_cost_usd": "1.601434",
+  "global_publication_count": 2,
+  "global_flags_and_account_approval_remain_disabled": true,
+  "global_budget_caps_usd": "0"
+}

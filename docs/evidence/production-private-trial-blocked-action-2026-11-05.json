@@ -1,0 +1,18 @@
+{
+  "action": "Additional supervised diagnostic chat/completions call",
+  "executed": false,
+  "blocked_by": "automatic approval review",
+  "reason": "Il s’agit d’un nouvel appel IA payant après la revue déjà tentée; l’autorisation de l’essai à 1 USD ne couvre pas clairement cette seconde requête diagnostique, et l’instruction était de rechercher la cause avant tout nouvel appel.",
+  "prepared_maximum_additional_calls": 2,
+  "trial_total_cap_usd": "1.00",
+  "pending_explicit_owner_answer": false,
+  "confirmed_trial_cost_usd": "0.800132",
+  "held_trial_reservations_usd": "0.10",
+  "no_new_youtube_upload": true,
+  "subsequent_explicit_owner_authorization_received": true,
+  "historical_event_before_followup_consent": true,
+  "resolution": "Owner explicitly authorized two additional calls; diagnostic and corrected review completed, then the same approved video was uploaded privately.",
+  "additional_calls_used": 2,
+  "final_trial_cost_usd": "0.800908",
+  "final_trial_held_usd": "0.14"
+}

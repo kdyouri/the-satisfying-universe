@@ -1,0 +1,270 @@
+purpose:
+  stands_in_for: OpenRouter chat/video/catalogues and YouTube grant refresh, upload and metadata
+  unblocks: Run distinct reusable jobs and recovery without real AI spend or social posts
+assumptions:
+- id: reusable-workflow-caller
+  status: supported
+  claim: In the tested scenarios distinct jobs keep their own media, metadata, costs and resumable publication
+    state, and can complete without a human-prepared brief.
+  reason: Actual protected API, worker dispatch, production engine, PostgreSQL ledger, FFmpeg rendering
+    and outgoing HTTP ran against contract-derived local providers.
+  verification: On 2026-11-05 all 119 regressions passed, including 21 reusable-workflow tests. Two jobs
+    created distinct concepts/files/hashes/translations and two publications; repeat execution made no
+    additional paid or upload POSTs. Minor findings passed; major, uncertain and unobservable-audio findings
+    stopped before upload. Duplicate concepts stopped before new video generations. All six-language JSON
+    fields and English default were validated. Synthetic translations/scores do not establish real model
+    quality.
+  source: docs/evidence/production-workflow-tests-2026-11-05.xml; docs/evidence/production-workflow-simulation-2026-11-05.json;
+    tests/test_workflow.py
+  updated_at: '2026-11-05'
+- id: durable-paid-intents
+  status: supported
+  claim: The tested caller does not repeat uncertain paid chat/video submissions and serializes paid intent
+    creation even without the outer worker advisory lock.
+  reason: Job/generation row locks protect inspection and mutation of durable paid intent; model usage
+    reservations remain scoped to the job and actual configured budgets.
+  verification: Explicit competing callers made one creative POST and one ledger entry. Ambiguous creative/video
+    failures remained owner_attention; known polling IDs resumed across fresh workflow instances without
+    resubmission. Changed prices stopped before paid submissions; overrun froze spending. No legacy first-video
+    budget override was applied to normal jobs; a one-dollar daily limit stopped a second job before overspend.
+  source: tests/test_workflow.py; tsu/pilot.py; tsu/workflow.py; docs/evidence/production-workflow-tests-2026-11-05.xml
+  updated_at: '2026-11-05'
+- id: job-upload-recovery
+  status: supported
+  claim: In the tested cases lost upload completion, lost public response and processing delay recover
+    by reading saved state, without a second media upload or new AI request.
+  reason: Real HTTP requests exercised the reused resumable engine with encrypted per-job session references
+    and publication intents, followed by exact metadata verification.
+  verification: Fresh dispatch/workflow instances resumed the same publication. Private targets stayed
+    private. Without publication authority, approved media waited and could resume without new spending.
+    Account approval was required except a separately confirmed, private-only one-job trial; that trial
+    kept global flags/budgets/account approval unchanged.
+  source: tests/test_workflow.py; tsu/youtube_job.py; tsu/youtube_upload.py; tsu/trial.py
+  updated_at: '2026-11-05'
+- id: simulation-fidelity-and-discovery
+  status: unknown
+  claim: Passing local simulations alone establishes live provider acceptance and real quality.
+  reason: Responses, scores and media are synthetic, and the Postman gateway decodes binary to text. Its
+    range/header checks do not establish uploaded media byte fidelity.
+  verification: Existing contract-derived OpenRouter/YouTube mocks and earlier Orbit findings were reused.
+    The final CLI status check succeeded but is signed out; earlier signed-in discovery was blocked by
+    a Keychain failure. No workspace login/publish was performed. Primary provider docs govern actual
+    fields. Public catalogues were refreshed without a key or charge; Gemma 0.038/0.113 and Gemini 0.25/1.50
+    USD per million tokens, Veo Lite silent 1080p 0.05 USD per second. This does not run the new live
+    workflow. A concrete private trial is prepared but awaits explicit human spending authorization.
+  source: docs/evidence/production-workflow-model-preflight-2026-11-05.json; https://openrouter.ai/docs/guides/overview/multimodal/video-generation;
+    https://developers.google.com/youtube/data/reference/rest/v3/videos/insert
+  updated_at: '2026-11-05'
+- id: installed-synthetic-worker-render
+  status: supported
+  claim: The isolated actual Celery prefork task can render and inspect the synthetic 15.8-second portrait
+    profile with music within the configured VPS worker limit.
+  reason: The real worker dependencies and FFmpeg ran on the target 1 GB VPS.
+  verification: Technical validation and AAC review passed. Peak 394.95 MiB under 512 MiB; no memory-limit
+    hit or OOM event. The temporary worker was removed and API/PostgreSQL/ Redis remain healthy. Synthetic
+    colors do not establish resource needs of every possible future source clip, live model quality or
+    the new complete real production cycle.
+  source: docs/evidence/production-workflow-celery-render-2026-11-05.json; docs/evidence/production-workflow-installed-status-2026-11-05.json
+  updated_at: '2026-11-05'
+- id: native-review-and-private-upload-live
+  status: supported
+  claim: One supervised real private trial completed with practical approval and six exact Google localized
+    readbacks, within its owner-authorized total cap.
+  reason: Model response scored 91 with coherent audio and a minor finding; Google confirmed processed
+    private HD video G9wNpynDbPY on the bound channel.
+  verification: Confirmed trial cost 0.800908 USD plus 0.14 USD held is below 1 USD. No clips were regenerated.
+    A connection failure and HTTP 400 required supervised recovery and explicit owner consent for two
+    extra calls after automatic approval rejected a diagnostic attempt. Compact schema plus standard AI
+    Studio endpoint succeeded; cause was not isolated. The old simulator did not model native Gemini schema
+    compilation or Flex acceptance. Full local validation and no automatic retries remain; 123 regressions
+    pass. This is not proof of unattended robustness.
+  source: docs/evidence/production-private-trial-live-verified-2026-11-05.json; docs/evidence/production-private-trial-fix-tests-2026-11-05.xml;
+    https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/control-generated-output;
+    https://openrouter.ai/docs/guides/routing/provider-selection
+  updated_at: '2026-11-05'
+- id: contextual-effects-and-discovery-caller
+  status: supported
+  claim: In the tested local cases new jobs render action-matched synthesized effects and add relevant
+    hashtags in all six descriptions; an explicit edit preserves privacy and extra languages without duplicate
+    uploads.
+  reason: The actual caller, PostgreSQL, FFmpeg and reused local HTTP providers exercised accepted output,
+    unsupported/missing sound plans, former metadata policy and a lost metadata response.
+  verification: On 2026-11-05 all 137 regressions passed. Unsupported plans stopped before video-generation
+    POSTs. Legacy upload metadata stayed pinned until an explicit edit; edit replay and a lost response
+    made no duplicate upload or paid request. Separate preview elementary video stream hashes match and
+    technical AAC/portrait checks pass. Synthetic scores do not establish natural sound quality or live
+    model acceptance of the new SoundPlan creative fields. No new paid AI call was made. Final correction
+    passes 138 regressions, including a stale post-update read and reordered tag response. A submitted
+    edit is read/reconciled without resending its PUT; privacy drift stops before mutation.
+  source: docs/evidence/discovery-sound-tests-2026-11-05.xml; docs/evidence/water-sounds-preview-2026-11-05.json;
+    tests/test_workflow.py; tests/test_discovery_sound.py; docs/evidence/discovery-sound-final-tests-2026-11-05.xml
+  updated_at: '2026-11-05'
+- id: contextual-sound-live-acceptance
+  status: unknown
+  claim: The creative model accepts and follows the new SoundPlan fields and the real review model judges
+    synthesized sound synchronization reliably.
+  reason: The prior real private trial used music. A newly authorized live creative call returned a valid
+    liquid_flow SoundPlan and six translations; both clips and the effects master rendered. The quality
+    call then lost its connection, so actual review acceptance and sound judgement remain unknown.
+  verification: New sound effects were rendered and technically inspected locally only. Retain manual
+    quality attention and keep scheduling off; a future separately authorized sample would settle live
+    behavior. CLI status succeeded with normal Keychain access and is signed out. No workspace login or
+    publication occurred at that stage. Later on 2026-11-05, owner-approved job 8db44bfd-f1b1-4433-a6ab-f4be088fc6da
+    generated its media and passed full technical/audio decoding, but quality_contextual_audio_v3 remains
+    submitting after a connection failure. No upload/retry occurred. Actual 0.800174 USD plus 0.05 USD
+    held is preserved; an extra review is prepared but not authorized. Free models/key reads returned
+    200. This does not prove reliable unattended provider operation or successful quality review.
+  source: tsu/workflow.py; tsu/sound_design.py; .runtime/discovery-sound-postman-status.log; docs/DISCOVERY_AND_SOUND_CONTRACT.md;
+    docs/evidence/contextual-sound-assets-2026-11-05.json; docs/evidence/contextual-sound-trial-stopped-2026-11-05.json;
+    docs/evidence/contextual-sound-review-recovery-proposal-2026-11-05.json
+  updated_at: '2026-11-05'
+- id: private-discovery-edit-live
+  status: supported
+  claim: The owner-requested hashtag edit of private video G9wNpynDbPY is confirmed in all six exact Google
+    hl readbacks while privacy, approved media, counts and previous public video remain unchanged.
+  reason: Google accepted the snippet/localizations edit; an initially incomplete confirmation was reconciled
+    by later reads. Tag order differed and is not treated as an intent change.
+  verification: On 2026-11-05 the saved metadata edit reached verified; en/fr/es/it/ru/zh-CN readbacks
+    match and all have hashtags. No new media upload or paid AI request occurred. Cumulative confirmed
+    1.601434 USD and 0.20 USD held are preserved; 2 publications/4 generations/12 usages remain. The uploaded
+    audio still contains music; the synthesized-water-effects preview is local only and has no new AI
+    approval. Future live SoundPlan behavior remains unknown as separately recorded.
+  source: docs/evidence/discovery-sound-youtube-update-2026-11-05.json; docs/evidence/discovery-sound-private-trial-verified-2026-11-05.json;
+    docs/evidence/discovery-sound-youtube-reconcile-2026-11-05.json
+  updated_at: '2026-11-05'
+- id: unattended-preparation-private-trial-caller
+  status: supported
+  claim: In the tested local cases the new fixed-key contextual-sound trial remains private, capped at
+    1 USD and repeat-safe while global authority stays off; recurring dispatch also requires outbound-alert
+    and automatic-offhost-backup confirmations.
+  reason: Actual PostgreSQL, production caller, FFmpeg and existing HTTP stand-ins ran with synthetic
+    explicit owner consent; the dispatcher reads the added readiness conditions.
+  verification: On 2026-11-05 all 144 regressions pass. The new private trial completed against stand-ins;
+    replay made no new paid/upload posts and global caps/flags remained zero/off. Local SMTP-over-TLS
+    tests exercised acceptance and a lost response without duplicate mail or raw error disclosure. Private
+    draft pages rejected anonymous requests and became public only when the separate owner-approval setting
+    was explicitly enabled in the disposable test. No real email or paid trial occurred.
+  source: docs/evidence/prelaunch-final-tests-2026-11-05.xml; tests/test_workflow.py; tests/test_notifications.py;
+    tests/test_public_information.py; docs/UNATTENDED_OPERATIONS_CONTRACT.md
+  updated_at: '2026-11-05'
+- id: large-review-request-transport
+  status: supported
+  claim: In the verified local caller cases large inline-video review bodies use a longer bounded connect/send
+    deadline while small calls and read deadlines retain their previous settings; uncertain paid requests
+    are not retried automatically.
+  reason: Requests keeps the connect socket timeout during body transmission. The slow local receiver
+    reproduces an upload failure with the old short limit and accepts one complete request with the fix.
+  verification: On 2026-11-05 all 148 regressions passed without skips using PostgreSQL and the existing
+    provider simulations. The separate real HTTP slow-body test distinguishes transport behavior; ordinary
+    response-latency mocks do not model socket write pressure. A free VPS probe used only fabricated bytes,
+    an invalid model and an invalid key; 4.8 MB failed with a write timeout at 10.27 seconds and reached
+    expected HTTP 401 after 51.68 seconds with a 60-second send limit. No user media or real credential
+    was sent in those probes. The paid extra review had failed with ConnectionError at 10.02 seconds;
+    both uncertain 0.05 USD holds remain, trial exposure 0.900174 USD. The installed adapter uses 120
+    seconds for large inline video. No paid review has yet exercised that correction; final review proposal
+    is separate, not authorized, maximum total exposure 0.950174 USD. Existing source/API hashes match
+    and old videos remain.
+  source: tsu/openrouter.py; tests/test_openrouter_review.py; docs/evidence/review-upload-final-tests-2026-11-05.xml;
+    docs/evidence/contextual-sound-free-synthetic-transport-probe-2026-11-05.json; docs/evidence/contextual-sound-free-synthetic-transport-longer-2026-11-05.json;
+    docs/evidence/contextual-sound-extra-review-stopped-2026-11-05.json; docs/evidence/review-upload-fixed-runtime-2026-11-05.json
+  updated_at: '2026-11-05'
+- id: contextual-sound-real-review-after-transport-fix
+  status: supported
+  claim: The corrected actual review request completed once with a valid structured response, while the
+    caller held the private trial for human review rather than uploading an unapproved sound.
+  reason: OpenRouter returned HTTP 200 after 55.13 seconds; the native review scored 90 but flagged audio_coherence=problem
+    and one minor sound-uniformity issue, so the captured policy returned manual_review.
+  verification: On 2026-11-05 the expressly approved quality_contextual_audio_v3_supervised_transport_fixed1
+    completed with 0.000837 USD review cost. The master hash is unchanged, full technical/audio decoding
+    passes, and no severe visual defects were reported. Trial actual is 0.801011 USD plus 0.10 USD prior
+    holds, below 1 USD; historical holds remain. There are 3 jobs, 6 generations, 2 publications and 18
+    usages. No upload occurred and no new AI call is authorized. The former transport reason was retained
+    as history and corrected to manual_review. Owner acceptance or local audio improvement is pending;
+    this does not establish successful unattended publication or reliable subjective sound judgement in
+    all cases. Later the owner rejected this sound and discarded the test. The job is now cancelled/never_publish,
+    private upload consent withdrawn. Former acceptance/local-improvement requests are superseded; no
+    upload is permitted.
+  source: docs/evidence/contextual-sound-transport-fixed-owner-consent-2026-11-05.json; docs/evidence/contextual-sound-final-review-2026-11-05.json;
+    docs/evidence/contextual-sound-review-held-verified-2026-11-05.json; tsu/contracts.py
+  updated_at: '2026-11-05'
+- id: single-native-audio-caller
+  status: supported
+  claim: In the tested local caller cases new jobs request exactly one 15-second native-audio video and
+    preserve its downloaded bytes through private publication; cancelled or modified outputs cannot be
+    published.
+  reason: The real reusable caller, PostgreSQL and FFmpeg ran against the existing Postman HTTP stand-ins,
+    including a synthetic 24-fps AAC provider fixture.
+  verification: '2026-11-05: 157 regressions passed, no skips. Cases cover one paid video POST, no continuity
+    image, unchanged source/master bytes and native fps, six languages/hashtags, replay, missing audio,
+    major versus minor defects, price/capability rejection before paid POST, file modification and cancelled-trial
+    replay. This establishes caller behavior against modeled responses, not real provider quality. Installed
+    read-only verification also confirms source hashes, native profile and cancelled-job execution stops
+    before provider creation; global flags/caps stay off/zero and prior accounting/publications are unchanged.'
+  source: tests/test_workflow.py; postman/mocks/openrouter/default.js; tsu/native_production.py; tsu/youtube_job.py;
+    docs/evidence/native-audio-final-tests-2026-11-05.xml; docs/evidence/native-audio-installed-2026-11-05.json;
+    docs/evidence/studio-native-audio-2026-11-05.png
+  updated_at: '2026-11-05'
+- id: native-model-catalogue-plan
+  status: supported
+  claim: The public catalogue read on 2026-11-05 advertises google/gemini-omni-1.2-flash with 15-second
+    1080p portrait native-audio capability and a 0.104256 USD/second with-audio SKU.
+  reason: Read the official live catalogue and video-generation guide. Orbit search/integrate supplied
+    reusable resource evidence; integration was partial because selected resources omitted polling, covered
+    by the existing known-ID caller and official guide.
+  verification: A free unauthenticated catalogue read produced the saved model record. Current generation
+    quote is 1.563840 USD, rechecked before spending with a 1.60 USD generation ceiling. No paid request
+    with this model was submitted.
+  source: https://openrouter.ai/api/v1/videos/models; https://openrouter.ai/docs/guides/overview/multimodal/video-generation;
+    docs/evidence/native-audio-model-catalogue-2026-11-05.json; docs/evidence/native-audio-orbit-discovery-2026-11-05.json;
+    docs/evidence/native-audio-orbit-integration-2026-11-05.json
+  updated_at: '2026-11-05'
+- id: native-audio-live-quality
+  status: unknown
+  claim: The selected new model reliably produces an acceptable continuous 15-second 1080p master with
+    coherent native environmental audio and usable provider cost evidence.
+  reason: No real sample under the newly selected model/policy has been authorized or generated. Catalogue
+    capability is not an output-quality guarantee. Prior trials used assembled clips and local music/effects,
+    and do not validate this new policy.
+  verification: Pending a separately authorized private sample with a fresh budget above the consumed
+    former 1 USD cap. Keep production_live_validated false and scheduling/global spending/publication
+    off. The previous turquoise-basin test is owner-discarded, never_publish, and must not be used to
+    settle this assumption.
+  source: docs/NATIVE_AUDIO_CONTRACT.md; docs/evidence/contextual-sound-owner-discarded-2026-11-05.json;
+    tsu/native_profile.py
+  updated_at: '2026-11-05'
+- id: native-170-private-scope-prepared
+  status: unknown
+  claim: The new fixed-key 1.70 USD native trial completes one real caller cycle against the existing
+    production and YouTube stand-ins while global controls stay off.
+  reason: Owner consent is present. The local grant/remaining-budget changes and an integration case are
+    prepared, but approval-service quota blocked SSH preflight and required elevated service work has
+    not run.
+  verification: '2026-11-06: 15 targeted offline scope/grant tests pass with disposable SQLite and a no-provider
+    runner; ruff passes. These establish fixed key/job/channel/visibility/cap bindings, replay identity,
+    old holds and remaining-cap arithmetic without global setting changes. They do not exercise financial
+    row locks, HTTP calls, media, or actual upload. tests/test_workflow.py::test_native_scoped_trial_one_private_cycle_under_170_with_global_flags_off
+    is prepared but not run. No code deployed, new paid call or upload.'
+  source: tests/test_native_trial_scope.py; tests/test_workflow.py; docs/evidence/native-trial-offline-scope-tests-2026-11-06.xml;
+    docs/evidence/native-trial-authorized-not-started-2026-11-06.json
+  updated_at: '2026-11-06'
+fingerprints:
+- id: reusable-production-local
+  date: '2026-11-05'
+  commit: null
+  cli: 1.80.0
+- id: discovery-sound-local
+  date: '2026-11-05'
+  commit: null
+  cli: 1.80.0
+- id: unattended-preparation
+  date: '2026-11-05'
+  commit: null
+  cli: 1.80.0
+- id: review-upload-transport
+  date: '2026-11-05'
+  commit: null
+  cli: 1.80.0
+- id: single-native-audio
+  date: '2026-11-05'
+  commit: null
+  cli: 1.80.0

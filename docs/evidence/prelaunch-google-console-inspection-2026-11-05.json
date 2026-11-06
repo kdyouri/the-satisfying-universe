@@ -1,0 +1,18 @@
+{
+  "google_account": "admin.technoinno@gmail.com",
+  "project": "satisfyinguniverse",
+  "observed_publishing_status": "Testing",
+  "publish_button_disabled": true,
+  "reported_reason": "Complete branding configuration",
+  "branding_and_clients_page_load_failed_in_agent_browser": true,
+  "owner_can_open_branding": true,
+  "owner_reported_blank_fields": [
+    "App logo",
+    "Application home page",
+    "Privacy policy URL",
+    "Terms of service URL"
+  ],
+  "client_id_match_not_reverified_in_console": true,
+  "google_changes_made": false,
+  "durable_grant_confirmed": false
+}

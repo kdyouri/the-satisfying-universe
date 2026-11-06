@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-05",
+  "assessment": "not_ready_for_unattended_scheduled_production",
+  "live_state": {
+    "youtube_connected": true,
+    "youtube_edit_authorized": true,
+    "scheduler_enabled": false,
+    "automatic_spending_authorized": false,
+    "automatic_publishing_authorized": false,
+    "daily_budget_usd": "0",
+    "monthly_budget_usd": "0",
+    "confirmed_ai_cost_usd": "0.800526",
+    "publication_count": 1,
+    "installed_worker_preflight_only": true,
+    "first_video_fixed_operation": true
+  },
+  "source_findings": {
+    "tsu/worker.py": "scan_once calls finish_preflight, not the paid production or publishing pipeline",
+    "tsu/jobs.py": "finish_preflight sets awaiting_configuration; schedule_day creates two date-slot jobs without concrete publication times",
+    "tsu/pilot.py": "fixed first-video key and operator brief; one-off budget context, supervised output and no publishing; creative prompt requests French metadata",
+    "tsu/youtube_upload.py": "fixed first-video asset and operation key",
+    "tsu/youtube_publication.py": "publishes only the fixed already-uploaded video with fixed sample translations",
+    "docs/OPERATIONS.md": "off-host automated backup/restore drill and outbound notification delivery remain pending"
+  },
+  "google_oauth_console_status": "not inspected in this audit; last known Testing, current status must be verified",
+  "external_production_actions_performed": false
+}

@@ -1,0 +1,89 @@
+{
+  "job_id": "a13b3205-90ae-49ef-8675-24bd919ff709",
+  "result": {
+    "job_id": "a13b3205-90ae-49ef-8675-24bd919ff709",
+    "video_id": "1bc12696-3635-41c5-853b-03626f385cd6",
+    "file": "/data/jobs/a13b3205-90ae-49ef-8675-24bd919ff709/first-video.mp4",
+    "title": "Ceramic Leaf Water Droplet",
+    "sha256": "9f1babe950ef63a4f1ec0294c02a3021dee794218c89420b5accf202293416f6",
+    "technical_pass": true,
+    "quality_score": 91,
+    "quality_pass": true,
+    "quality_decision": "accepted",
+    "production_profile": {
+      "version": "balanced_audio_v2",
+      "audio_mode": "calm_music_in_postproduction",
+      "audio_ready": true,
+      "audio_target_lufs": -24,
+      "native_generated_audio": false,
+      "crossfade_seconds": 0.2,
+      "quality_minimum_score": 80,
+      "quality_visibility": "normal_playback_on_phone",
+      "minor_defects": "accepted",
+      "visible_major_defects": "timestamped_evidence_required",
+      "repair_priority": "local_edit",
+      "uncertain_findings": "manual_review",
+      "automatic_regeneration": false,
+      "duration_seconds": 15.8,
+      "soundtrack_sha256": "df049ef9572d4353d1e2b344a6653bef63bfd2be898bba6a33823e3194945f2d",
+      "soundtrack_source": "original local synthesis; no external samples"
+    },
+    "issues": [
+      {
+        "start_seconds": 9.2,
+        "end_seconds": 15.8,
+        "severity": "minor",
+        "visibility": "normal_playback",
+        "remedy": "manual_review",
+        "description": "Une nouvelle goutte d'eau apparaît soudainement de manière artificielle, ce qui rompt la fluidité de l'animation.",
+        "evidence": "La goutte apparaît brusquement en haut de l'écran, sans origine claire ni mouvement naturel venant du haut du cadre."
+      }
+    ],
+    "severe_defects": [],
+    "actual_cost_usd": "0.800908",
+    "unsettled_reservations": 3,
+    "published": false,
+    "scheduler_enabled": false,
+    "automatic_regeneration": false
+  },
+  "confirmed_trial_cost_usd": "0.800908",
+  "held_trial_reservations_usd": "0.140000",
+  "supervised_review_recovery_required": true,
+  "maximum_authorized_additional_spend_usd": "1.00",
+  "publication": {
+    "publication_id": "2a378d50-3ba0-4f3d-856d-f2747b6b9eff",
+    "video_id": "G9wNpynDbPY",
+    "status": "processed_private",
+    "privacy": "private",
+    "requested_privacy": "private",
+    "url": "https://www.youtube.com/watch?v=G9wNpynDbPY",
+    "last_error": null,
+    "verified": {
+      "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+      "privacy": "private",
+      "title": "Ceramic Leaf Water Droplet",
+      "upload_status": "processed",
+      "processing_status": "succeeded",
+      "duration": "PT16S",
+      "definition": "hd",
+      "synthetic_media": null
+    },
+    "sha256": "9f1babe950ef63a4f1ec0294c02a3021dee794218c89420b5accf202293416f6"
+  },
+  "six_localized_readbacks_match": {
+    "en": true,
+    "fr": true,
+    "es": true,
+    "it": true,
+    "ru": true,
+    "zh-CN": true
+  },
+  "original_public_video_unchanged": true,
+  "original_rejected_job_preserved": true,
+  "global_publication_count": 2,
+  "global_generation_count": 4,
+  "global_recurring_controls_remain_disabled": true,
+  "real_cycle_verified": true,
+  "verification_new_uploads": 0,
+  "verification_new_paid_calls": 0
+}

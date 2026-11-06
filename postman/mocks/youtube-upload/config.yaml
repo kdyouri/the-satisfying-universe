@@ -1,0 +1,12 @@
+version: 1
+id: bfd423ad-b6ec-4dce-80b8-9d06c9d998d3
+name: youtube-upload
+slug: youtube-upload
+protocol: http
+interceptRequests: true
+origin: [oauth2.googleapis.com, www.googleapis.com]
+port: 4502
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true

@@ -1,0 +1,66 @@
+x-application: &application
+  build: .
+  env_file: .env
+  restart: unless-stopped
+  volumes:
+    - media:/data
+  depends_on:
+    migrate:
+      condition: service_completed_successfully
+    redis:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:17-bookworm
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: tsu
+      POSTGRES_DB: tsu
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tsu -d tsu"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  migrate:
+    build: .
+    env_file: .env
+    command: ["alembic", "upgrade", "head"]
+    restart: "no"
+    depends_on:
+      postgres:
+        condition: service_healthy
+  api:
+    <<: *application
+    ports:
+      - "127.0.0.1:8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/live')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+  worker:
+    <<: *application
+    command: ["celery", "-A", "tsu.worker.celery_app", "worker", "--loglevel=INFO", "--concurrency=2"]
+  beat:
+    <<: *application
+    command: ["celery", "-A", "tsu.worker.celery_app", "beat", "--loglevel=INFO", "--schedule=/data/celerybeat-schedule"]
+
+volumes:
+  postgres:
+  redis:
+  media:

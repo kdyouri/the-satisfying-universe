@@ -1,0 +1,18 @@
+{
+  "production": {
+    "event_counts": {
+      "listening": 1,
+      "request": 719,
+      "summary": 1
+    },
+    "synthetic_local_run_only": true
+  },
+  "youtube": {
+    "event_counts": {
+      "listening": 1,
+      "request": 327,
+      "summary": 1
+    },
+    "synthetic_local_run_only": true
+  }
+}

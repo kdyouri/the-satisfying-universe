@@ -1,0 +1,33 @@
+{
+  "archive_sha256": "9de379d174746eac87ccf9e739104ff0cb07591b463c67f8ead3fb42db4d6ecb",
+  "files": [
+    {
+      "path": "tsu/openrouter.py",
+      "sha256": "6208f17dc2e91d5e84586ac981c0db0f86509ef6adcc91db4891d63afb2fd114"
+    },
+    {
+      "path": "tsu/workflow.py",
+      "sha256": "f851ff41c696140353ff9746b0622397c8a44cb0e5b61fc53d5fc9ac9d5c769e"
+    }
+  ],
+  "secrets_included": false,
+  "scheduler_activation": false,
+  "new_paid_calls_for_deployment": 0,
+  "deployed": true,
+  "api_image_config_id": "sha256:d700bc5e6ec812035330905012215a30846ce04557c826f062fe3dfec4032060",
+  "worker_image_config_id": "sha256:d700bc5e6ec812035330905012215a30846ce04557c826f062fe3dfec4032060",
+  "regression_tests_passed": 123,
+  "installed_runtime_checks_passed": 37,
+  "persistent_services": [
+    "api",
+    "postgres",
+    "redis"
+  ],
+  "scheduler_enabled": false,
+  "global_spending_authorized": false,
+  "global_publishing_authorized": false,
+  "global_budget_caps_usd": "0",
+  "private_trial_complete": true,
+  "local_simulations_stopped": true,
+  "disposable_postgresql_stopped": true
+}

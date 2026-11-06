@@ -1,0 +1,5 @@
+["technoinno-api:latest","technoinno-worker:latest"] sha256:2b916f3825b2ceb24b11948acbc60a422e015ccb129e47b9a5a0576887e4c9ab
+["technoinno-api:latest","technoinno-worker:latest"] sha256:2b916f3825b2ceb24b11948acbc60a422e015ccb129e47b9a5a0576887e4c9ab
+api
+postgres
+redis

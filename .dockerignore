@@ -1,0 +1,15 @@
+.env
+.env.*
+.venv
+.runtime
+.git
+backups
+secrets
+__pycache__
+.pytest_cache
+*.db
+generated
+approved
+rejected
+publications
+analytics

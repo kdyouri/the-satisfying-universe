@@ -1,0 +1,12 @@
+{
+  "synthetic_media_only": true,
+  "real_provider_calls": 0,
+  "new_publications": 0,
+  "technical_pass": true,
+  "duration_seconds": 15.8,
+  "resolution": "1080x1920",
+  "final_and_review_audio": "AAC, audible final checked",
+  "worker_memory_limit_mib": 384.0,
+  "worker_cgroup_peak_mib": 363.26,
+  "maximum_ffmpeg_child_rss_mib": 271.54
+}

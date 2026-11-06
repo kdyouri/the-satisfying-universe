@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-05",
+  "environment": "local Postman HTTP stand-in on loopback",
+  "real_google_consent": false,
+  "scenarios": [
+    {
+      "scenario": "success",
+      "passed": true,
+      "credentials_saved": 1,
+      "operations": [
+        "token",
+        "channels"
+      ]
+    },
+    {
+      "scenario": "wrong_channel",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token",
+        "channels"
+      ]
+    },
+    {
+      "scenario": "no_refresh",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token"
+      ]
+    },
+    {
+      "scenario": "missing_scope",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token"
+      ]
+    },
+    {
+      "scenario": "missing_edit_scope",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token"
+      ]
+    },
+    {
+      "scenario": "token_failure",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token"
+      ]
+    },
+    {
+      "scenario": "server_error",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token"
+      ]
+    },
+    {
+      "scenario": "channel_failure",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token",
+        "channels"
+      ]
+    },
+    {
+      "scenario": "empty_channel",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token",
+        "channels"
+      ]
+    },
+    {
+      "scenario": "timeout",
+      "passed": true,
+      "credentials_saved": 0,
+      "operations": [
+        "token"
+      ]
+    }
+  ]
+}

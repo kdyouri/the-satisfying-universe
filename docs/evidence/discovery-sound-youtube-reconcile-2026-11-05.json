@@ -1,0 +1,46 @@
+{
+  "stage": "prepared",
+  "privacy": "private",
+  "differences": [
+    {
+      "part": "snippet",
+      "field": "tags",
+      "expected": [
+        "TechnoInno",
+        "satisfying",
+        "shorts",
+        "macro",
+        "cinematic"
+      ],
+      "actual": [
+        "TechnoInno",
+        "cinematic",
+        "macro",
+        "satisfying",
+        "shorts"
+      ]
+    }
+  ],
+  "target_tags": [
+    "TechnoInno",
+    "satisfying",
+    "shorts",
+    "macro",
+    "cinematic"
+  ],
+  "actual_tags": [
+    "TechnoInno",
+    "cinematic",
+    "macro",
+    "satisfying",
+    "shorts"
+  ],
+  "known_language_keys": [
+    "es",
+    "it",
+    "ru",
+    "en",
+    "fr",
+    "zh-CN"
+  ]
+}

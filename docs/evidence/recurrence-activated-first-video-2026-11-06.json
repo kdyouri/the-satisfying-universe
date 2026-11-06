@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "operation": "recurrence activation + first scheduled video",
+  "activation_steps": {
+    "outbound_alerts": {
+      "smtp": "smtp.gmail.com:587 STARTTLS, app password only in VPS .env (0600)",
+      "test": "3 pending alerts accepted, 0 uncertain, owner confirmed receipt",
+      "OUTBOUND_ALERTS_CONFIRMED": true
+    },
+    "google_grant": {
+      "owner_action": "app switched to Production, reconnected via studio.technoinno.live",
+      "new_flow_consumed_at": "2026-11-06T17:21:43Z",
+      "refresh_token_expires_in": null,
+      "durable": true
+    },
+    "offhost_backup": {
+      "provider": "Cloudflare R2, bucket technoinno-backup, S3 API via rclone 1.76 (no_check_bucket for bucket-scoped token)",
+      "first_upload": "daily/2026-11-06.age 142877896 bytes, 56 media files, 1739s",
+      "v2_design": "daily 51KB DB+recovery bundle (age-encrypted, includes token key + media crypt password + 56-file sha256 manifest) + incremental rclone-crypt media sync (56 objects, 136.5 MiB); weekly full bundle on Sundays; retention 7 daily / 4 weekly",
+      "cron": "/etc/cron.d/technoinno-backup at 03:30 UTC = 04:30 Africa/Casablanca daily",
+      "restore_drill": "R2 download -> age decrypt (owner key off-VPS) -> 56/56 media sha256 verified -> isolated PostgreSQL 17 restore (alembic 7d920bb1c441, counts 6 jobs/9 generations/3 publications/25 usages exact) -> Google grant decrypted with recovered key",
+      "failure_alerting": "script inserts a dashboard alert on failure (then emailed by the Beat task)",
+      "OFFHOST_BACKUP_CONFIRMED": true
+    },
+    "budget_reconciliation": {
+      "problem": "9 standing reservations (3.427680 USD from failed/uncertain calls) counted against the 2.00 USD daily cap, blocking any new reservation",
+      "evidence": "OpenRouter account usage 3.043405026 <= settled sum 3.043409 (difference -0.000003974, pure display rounding): no unaccounted charge exists, so the held reservations were provably never billed",
+      "owner_decision": "settle the 9 holds at 0.000000 with this arithmetic evidence recorded in each row's remote_request_id",
+      "result": "holds released; daily cap 2.00 functional as chosen"
+    },
+    "activation": {
+      "ENABLE_DAILY_SCHEDULER": true,
+      "PRODUCTION_TIMES": ["12:00", "20:00"],
+      "account_approved_for_publication": true,
+      "worker_beat": "started (profile production); worker and beat images rebuilt to the current source — the pre-existing worker container had been running the outdated image, which created the 20:00 slot job with the superseded v4 profile and caused instant RuntimeError failures before any paid call",
+      "slot_1_2026_11_06": "pre-created as cancelled with the owner's no-catch-up decision recorded"
+    }
+  },
+  "first_scheduled_video": {
+    "slot": "2026-11-06 20:00 (first dispatch attempts failed on the stale worker image and stale v4 job profile; migrated to native_audio_v5 before any paid call, then dispatched successfully)",
+    "concept": "Sage Matcha Oil Droplet",
+    "cost_usd": "0.640656 (creative 0.000085 + generation 0.64 + review 0.000571)",
+    "quality_score": 93,
+    "review_decision": "manual_review — the review judged the native audio effectively absent (mean -47.0 dB, peak -8.8 dB: present but sparse/quiet)",
+    "owner_decision": "accepted and published publicly (reference owner-chat-acceptance-2026-11-06-sage-matcha-51376fcf-public)",
+    "youtube": {
+      "video_id": "5KrRDyHQyU0",
+      "url": "https://www.youtube.com/watch?v=5KrRDyHQyU0",
+      "visibility": "public",
+      "definition": "hd",
+      "languages_verified": ["en", "fr", "es", "it", "ru", "zh-CN"],
+      "job_status": "published"
+    }
+  },
+  "global_controls_now": {
+    "spending_authorized": true,
+    "publishing_authorized": true,
+    "daily_budget_usd": "2.00",
+    "monthly_budget_usd": "45.00",
+    "scheduler": "12:00 and 20:00 daily",
+    "readiness_blockers": []
+  },
+  "expected_economics": "~1.30 USD/day at 2 videos/day, ~39 USD/month within the 45.00 cap; videos with manual_review verdicts stop for the owner (email alert) instead of publishing automatically",
+  "watch_items": [
+    "silent/quiet native audio recurs on some Veo outputs — the review correctly stops them; owner decisions remain required for those",
+    "R2 free tier is 10 GB; media grows ~20 MB/day — review storage costs in a few months",
+    "OpenRouter account usage must stay reconciled; new uncertain holds will again count against caps until settled"
+  ]
+}

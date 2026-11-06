@@ -1,0 +1,26 @@
+{
+  "authorization_source": "Direct owner response in this chat",
+  "owner_answer": "Oui, un essai privé, maximum 1 USD",
+  "maximum_additional_spend_usd": "1.00",
+  "visibility": "private",
+  "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "zh-CN"
+  ],
+  "theme": "Clear water droplet moving along a blue ceramic leaf",
+  "scope": "One idempotent trial only; no automatic regeneration or recurring activation",
+  "reference": "owner-explicit-private-1USD-2026-11-05",
+  "additional_diagnostic_authorization": {
+    "source": "Direct owner reply after automatic-approval rejection",
+    "owner_answer": "Oui, deux appels maximum, total limité à 1 USD",
+    "maximum_additional_calls": 2,
+    "trial_total_cap_usd": "1.00",
+    "regenerate_media": false,
+    "activate_schedule": false
+  }
+}

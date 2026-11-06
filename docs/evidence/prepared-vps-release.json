@@ -1,0 +1,280 @@
+{
+  "prepared_on": "2026-11-04",
+  "deployed": false,
+  "secrets_in_archive": false,
+  "archive_sha256": "bd1f7c2824705c988050b8105cb4361aa763b72a1441a731f7d07f4a59aa3445",
+  "files": [
+    {
+      "path": "tsu/__init__.py",
+      "sha256": "11101103942c0c41b4ac6b7db6493a03d4f6affef59e0d09245ed02bb277f2c2"
+    },
+    {
+      "path": "tsu/admin.html",
+      "sha256": "f155fb48b3bdbf289beb680fc5c914eb4f12783cc2214a3aca3489e3019b5480"
+    },
+    {
+      "path": "tsu/api.py",
+      "sha256": "2bbba20a8d35f08dace9d185b48af40c346c4a502f9f68d3c8ef5e543d3dbe5b"
+    },
+    {
+      "path": "tsu/assets/calm-original.json",
+      "sha256": "bb1485ab843c8314818e242c1bb660f54507fad0d2486176e9865ccf3ead76e3"
+    },
+    {
+      "path": "tsu/assets/calm-original.wav",
+      "sha256": "df049ef9572d4353d1e2b344a6653bef63bfd2be898bba6a33823e3194945f2d"
+    },
+    {
+      "path": "tsu/browser_auth.py",
+      "sha256": "d616c261408ac320a8ef7c8b2f2e6fbca7657e6cef4e02d85bee0962717cddd3"
+    },
+    {
+      "path": "tsu/budget.py",
+      "sha256": "00ef924d38c6615456bb099bfca13d5ec6b0a4ff8cd45df38f80a4086d0c5d7d"
+    },
+    {
+      "path": "tsu/config.py",
+      "sha256": "584f1776d25641ab3796962bdb02e3ac70547504ac0e733274ba01124d6bc7a9"
+    },
+    {
+      "path": "tsu/contracts.py",
+      "sha256": "d301ecc511c5e3df24e9369c697b745ca5b1bd62a123176a285046023f89d382"
+    },
+    {
+      "path": "tsu/db.py",
+      "sha256": "f06236b678dd879ded688f77d0fb2fd129f5bf97900e705970f5286871b80af6"
+    },
+    {
+      "path": "tsu/jobs.py",
+      "sha256": "1ff8df5c8aeafe33f9e1255c1569c254d8fa2d78b827b6a0e358e5e397366af1"
+    },
+    {
+      "path": "tsu/login.html",
+      "sha256": "a450a305f1f75659875c0536c020532480eacd9e442fcdec80f31ac09bd876e9"
+    },
+    {
+      "path": "tsu/media.py",
+      "sha256": "3cf381b3f82939b0ac89318b22231c4ae93b9fcf9989c962feccafb1519f4d2e"
+    },
+    {
+      "path": "tsu/models.py",
+      "sha256": "43331ec832c2cf332fb9279f0939e5d060d17ae8a2dbc344382d36faef8a8a47"
+    },
+    {
+      "path": "tsu/native_production.py",
+      "sha256": "07234874e414b841a08ed1b8fd7240e656a5fcba5c45ff0fbed413eb2a989599"
+    },
+    {
+      "path": "tsu/native_profile.py",
+      "sha256": "4c2ad736fd9a017504ed81943eda87b2dddaf4554ae14fa48aa719f300ac2a64"
+    },
+    {
+      "path": "tsu/native_trial.py",
+      "sha256": "0d51523565f01c8273c6a6ec6cb7ab6153b373244721ced041ce8fdd5a07dab5"
+    },
+    {
+      "path": "tsu/notifications.py",
+      "sha256": "95ec5b8b2ffac2a455e37dabe0b633a43c2da9ab42f71a8e2b5d2af76e0717aa"
+    },
+    {
+      "path": "tsu/openrouter.py",
+      "sha256": "6cab7daf0c13b771f63d5bed4460dab79344466102e058a0b52128beaf0bdba0"
+    },
+    {
+      "path": "tsu/pilot.py",
+      "sha256": "80a73a0908e7df420b5345a9e5d9d92c421a47192287241db3ec49a63db7143d"
+    },
+    {
+      "path": "tsu/production.py",
+      "sha256": "75fcc6b93c801de4f9463b31894f7e5e8686555971ea297fca0f28ec19a2d8d8"
+    },
+    {
+      "path": "tsu/public_information.py",
+      "sha256": "69e320627c924decda146b01d961c7d886bce19c378115fc2398550df8477bd6"
+    },
+    {
+      "path": "tsu/security.py",
+      "sha256": "7e4f17fd441c1fe29a995c60c6c6c3ea619301c85e46737175e6ee1b5225c20f"
+    },
+    {
+      "path": "tsu/sound_design.py",
+      "sha256": "ec29636679c599184a7e3cf9ee52accb3d3b36c2d8b11a7fce08d9025ce0a3dd"
+    },
+    {
+      "path": "tsu/sound_trial.py",
+      "sha256": "fd9ac82ec636f64c78b615957ce96cc2f74ec99753ec257daadf260cb813bcce"
+    },
+    {
+      "path": "tsu/trial.py",
+      "sha256": "fc14057da0b7ce48bdbcb9f2686ea6d8d61cda629e645db801b9dcbff1928e3b"
+    },
+    {
+      "path": "tsu/trial_policy.py",
+      "sha256": "71318673db4b9a6cc6b935260433445931bfaf651ae07736484e59f3f0fdf7ee"
+    },
+    {
+      "path": "tsu/worker.py",
+      "sha256": "83a2d13d70a629e3cdfcc2a77974a9344249a66a0d9749d2df972f8bf1718f61"
+    },
+    {
+      "path": "tsu/workflow.py",
+      "sha256": "74351bbf49a80b8728da0a32a01fbf0f9590a4e523eab0bb9f15b8d41850b32b"
+    },
+    {
+      "path": "tsu/youtube_auth.py",
+      "sha256": "5d9bf4f1d530cb108ed0596bc2eaa588896691b33aef16fc41d9b4e8a550e838"
+    },
+    {
+      "path": "tsu/youtube_job.py",
+      "sha256": "cb18c7d6a8a29abc65202a0bb4d2f95df514792274eac977baa071031951ebee"
+    },
+    {
+      "path": "tsu/youtube_metadata.py",
+      "sha256": "0392fa5856b5a277deac8bc8fe0452fe80113d4121ae7c4109471e2f5941db0e"
+    },
+    {
+      "path": "tsu/youtube_publication.py",
+      "sha256": "0d80032e1655b23bdc5d41c83c7f065c0fc6d0179a04a4aaf6d02c64c50b4657"
+    },
+    {
+      "path": "tsu/youtube_upload.py",
+      "sha256": "5f3bfcd5fe89a40de3a3ed035fc41560d7b57623331707e6ccfd2f8a07387c04"
+    },
+    {
+      "path": "migrations/env.py",
+      "sha256": "fa384871b4e96a08a48067e6d60882b872d24e7961ee5f8562a358896c8f75de"
+    },
+    {
+      "path": "migrations/script.py.mako",
+      "sha256": "116d035db5d6b4abe2f7e00e60d547bf8396983c741d09af902b184ccc6e0a35"
+    },
+    {
+      "path": "migrations/versions/7d920bb1c441_owner_sessions_and_youtube_oauth.py",
+      "sha256": "f3612abc0c72951a79893025134517ffbeb875d51789fec51b6706abb15daaca"
+    },
+    {
+      "path": "migrations/versions/f05b1bece7d8_initial_durable_production_and_.py",
+      "sha256": "4570239bc89b9adefe5d31bb6f73a41ba62f773cdab2c8df9a2c0d0e5e179949"
+    },
+    {
+      "path": "deploy/README.md",
+      "sha256": "5e6d6b193d8b7415ab373d1050d5225dbec829c5a2781fd937472e947eab6c4d"
+    },
+    {
+      "path": "deploy/backup-manifest.py",
+      "sha256": "f91c3d67563fe81e2602a8210ea4d6e039d68b04d8a1091fe2cae5d7386f1c70"
+    },
+    {
+      "path": "deploy/bootstrap-vps.sh",
+      "sha256": "2bdb477f1708856cce3ad06ddf6af321252d36b89008a4112f5f9c035c167ea9"
+    },
+    {
+      "path": "deploy/enable-https.sh",
+      "sha256": "d6368a0676a75094828bcbccea73bf531105f151e0aafb6aaab9ac13c7bbf4bf"
+    },
+    {
+      "path": "deploy/inspect-private-trial.py",
+      "sha256": "3b220a3fafab335e695ccf820481a6c57c17459fec305c8bb2136758e90936c7"
+    },
+    {
+      "path": "deploy/record-private-trial-review.py",
+      "sha256": "10244e3ade3f847c28652beb88308fb03d6bb062a2da2751c16c3a4e41ce638d"
+    },
+    {
+      "path": "deploy/review-contextual-sound-trial.py",
+      "sha256": "6314fbc0ef31e2c7ae406fe272961563ddf1edacdd79c594f7692c98e3b34624"
+    },
+    {
+      "path": "deploy/review-private-trial.py",
+      "sha256": "4b575b682f78ff0b67ddf267f80183f8c5bfa35393ecc04d24e1a88543603c79"
+    },
+    {
+      "path": "deploy/snapshot-vps.sh",
+      "sha256": "4ec0aed10c0888664405f5b2cf05384aa7686afc11f04b5ad02de1b0a28111f8"
+    },
+    {
+      "path": "deploy/studio-http.conf",
+      "sha256": "0f6b22cae400933a23e5e160bc7b9912cd0fa0f35a58d81fd47c277ed2c7d4f2"
+    },
+    {
+      "path": "deploy/studio-https.conf",
+      "sha256": "efa46a2665398d55091cf699c9a3916ebc2480ff228cc62111814ab1bbc08be6"
+    },
+    {
+      "path": "deploy/update-private-trial-discovery.py",
+      "sha256": "7675c4542375b17cac5ada2ff0f966926df49e0689baf8bece13cf668fdec2d8"
+    },
+    {
+      "path": "deploy/verify-native-audio.py",
+      "sha256": "40fd7b86edc5cbfda94ea97939697531cecab30e2fb26f4b85b258a6e4711f67"
+    },
+    {
+      "path": "deploy/verify-private-trial.py",
+      "sha256": "acec4d175d92c9d96be02e461658656505666be5e0e30e43ec2ab93d57451304"
+    },
+    {
+      "path": "deploy/verify-runtime.py",
+      "sha256": "bc04ddfecc48d431a5f44993674b5ca04e974a10798beacd759cd7749f35f5f7"
+    },
+    {
+      "path": "deploy/verify-workflow-render.py",
+      "sha256": "399d800b1826d1b5d88ed2b24a29a5f48c1136282ef334131c6563a227cccf56"
+    },
+    {
+      "path": "deploy/verify-workflow-state.py",
+      "sha256": "51be566164f22fb769ba5f3908c3210891e59ec76bc11e09741975426ef76cb8"
+    },
+    {
+      "path": "deploy/verify-youtube-private.py",
+      "sha256": "9aecee835b5e1f437ca139222580b2cdf6a126fb987848bc110dc471434ce831"
+    },
+    {
+      "path": "deploy/verify-youtube-public.py",
+      "sha256": "ea61347bbd736777938bf6cd45e03b96a7c9627e4283d1ead20f742cc612df01"
+    },
+    {
+      "path": "deploy/worker-render-task.py",
+      "sha256": "6142a400848a72b5ff0061a81ec845f5e83554282c6ef1917819018007c643e7"
+    },
+    {
+      "path": "deploy/youtube-private-test.py",
+      "sha256": "9a6f4ad85debba68bb14ed3b69a2ba22979e77cb0e31238b1fa0a2bcf7d7dbd1"
+    },
+    {
+      "path": "deploy/youtube-publication.py",
+      "sha256": "ab8b5a83926b973d5afbd13e94dbe5787ad463fdcfbcfa104ca5c8609df40a12"
+    },
+    {
+      "path": "alembic.ini",
+      "sha256": "55f6227b037e8558031bdca3ace12a01bd14b7fea0df8d7285d35a508c04a671"
+    },
+    {
+      "path": "requirements.lock",
+      "sha256": "e40aec068905c039c2bc0cbf8462d40c588ffe81a91ca8ec3c54d00d8be64c2d"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "2a0be7f9593b00aef8ddebdd346a085e5a6ed791b02fcc75d266435e27fee6a8"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "5caa73277c401c7aa9cef7807099c291492683b3b54fef0082a9976fdfbae7f5"
+    },
+    {
+      "path": ".dockerignore",
+      "sha256": "dc27246df98021062b4c0fd16eddc8ee0845d223bed9bd80ad0150cb6dc31486"
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "185df2a97ae151446dc89a8fb7388f04193714847f0dc60dad7cd79cb7606931"
+    },
+    {
+      "path": "compose.vps.yaml",
+      "sha256": "d018f58ce4f6e70c72c32e7c630e65b98679fea1413159d1d2489fc5f60c5b27"
+    },
+    {
+      "path": "compose.pilot.yaml",
+      "sha256": "43afe832de55610d458854104aefe7c3f8aa1114f912ce34fa04951ccbe2bba2"
+    }
+  ]
+}

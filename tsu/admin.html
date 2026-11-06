@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Satisfying Universe · Control room</title>
+<style>
+body{margin:0;background:#0c1424;color:#eaf2fb;font:17px/1.6 system-ui,sans-serif}
+main{max-width:940px;margin:70px auto;padding:25px}small{color:#8fded7;letter-spacing:.13em}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.15;margin-bottom:12px}p{color:#aebed4}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:35px}
+section{background:#152139;border:1px solid #2a3953;border-radius:16px;padding:24px}
+h2{font-size:18px}strong{font-size:28px;font-weight:500}ul{padding-left:20px}
+.note{margin-top:30px;border-left:3px solid #8fded7;padding-left:18px}
+button{background:#8fded7;color:#0c1424;border:0;border-radius:8px;padding:12px 18px;font:inherit;cursor:pointer;margin-top:12px}
+a{color:#8fded7}
+</style>
+<main><small>BEAUTIFUL THINGS. PERFECT MOMENTS.</small>
+<h1>The Satisfying Universe</h1><p>Studio de production · YouTube</p>
+<div class="grid"><section><h2>AI budget ceilings</h2><strong>${{daily}} / day</strong>
+<p>${{monthly}} per calendar month</p></section>
+<section><h2>Durable production jobs</h2><ul>{{jobs}}</ul></section>
+<section><h2>Unresolved alerts</h2><strong>{{alerts}}</strong><p>See the protected alerts API for details.</p></section></div>
+<section style="margin-top:20px"><h2>YouTube · TechnoInno</h2><p>{{youtube_status}}</p>
+{{owner_actions}}<p>Connecting grants access to the channel. It does not start uploads or paid video generation.</p></section>
+<section style="margin-top:20px"><h2>Première vidéo YouTube</h2><p>{{youtube_upload_status}}</p>
+<p>Version avec musique. La production programmée reste désactivée.</p></section>
+<section style="margin-top:20px"><h2>Publication internationale · 6 langues</h2>
+<p>Anglais par défaut, avec titres et descriptions adaptés dans cinq autres langues.</p>
+<table style="width:100%;text-align:left;border-spacing:0 12px"><tbody>{{youtube_languages}}</tbody></table>
+<p>{{youtube_edit_status}}</p>
+<p>Ces versions concernent la même vidéo. Aucune nouvelle génération payante.</p></section>
+<section style="margin-top:20px"><h2>Réglages des prochaines vidéos</h2>
+<p>Une seule génération continue de {{native_duration_seconds}} secondes en 1080p, avec son IA natif synchronisé à l’action.</p>
+<p>Fichier conservé intact : aucun assemblage ni montage, aucune piste sonore ajoutée.
+Pas de musique par défaut. Hashtags pertinents dans les six langues.</p>
+<p>Petites imperfections tolérées. Les défauts importants doivent être visibles à vitesse
+normale et accompagnés d’un emplacement précis. Seuil de qualité : 80/100.
+Examen manuel si le son manque ou si une correction serait nécessaire.
+Aucune nouvelle génération payante automatique.</p></section>
+<section style="margin-top:20px"><h2>Production programmée</h2>
+<p>{{production_status}}</p>
+<p>Chaque nouvelle vidéo suit le même parcours : idée, création avec son IA natif, contrôle,
+six langues et publication. Les résultats incertains restent en attente de vérification.</p></section>
+<section style="margin-top:20px"><h2>Alertes par courriel</h2>
+<p>{{email_alert_status}}</p>
+<p>Une alerte invite à consulter le studio. Elle ne contient aucun identifiant secret
+et ne déclenche aucune génération payante.</p></section>
+</main></html>

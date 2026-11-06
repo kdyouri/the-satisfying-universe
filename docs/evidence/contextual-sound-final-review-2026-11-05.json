@@ -1,0 +1,198 @@
+{
+  "job_id": "8db44bfd-f1b1-4433-a6ab-f4be088fc6da",
+  "google_credential_updated_at": "2026-11-05T21:40:08.987655+00:00",
+  "status": "awaiting_owner_review",
+  "reason": "Provider connection failed; do not repeat a paid submission",
+  "calls": {
+    "creative": "done",
+    "quality_contextual_audio_v3": "submitting",
+    "quality_contextual_audio_v3_supervised1": "submitting",
+    "quality_contextual_audio_v3_supervised_transport_fixed1": "done"
+  },
+  "clips": [
+    {
+      "index": 0,
+      "status": "completed",
+      "remote_id_known": true
+    },
+    {
+      "index": 1,
+      "status": "completed",
+      "remote_id_known": true
+    }
+  ],
+  "actual_usd": "0.801011",
+  "held_usd": "0.100000",
+  "maximum_authorized_usd": "1.00",
+  "charges": [
+    {
+      "purpose": "creative",
+      "actual_usd": "0.000174",
+      "reserved_usd": "0.010000"
+    },
+    {
+      "purpose": "video",
+      "actual_usd": "0.400000",
+      "reserved_usd": "0.400000"
+    },
+    {
+      "purpose": "video",
+      "actual_usd": "0.400000",
+      "reserved_usd": "0.400000"
+    },
+    {
+      "purpose": "quality_contextual_audio_v3",
+      "actual_usd": null,
+      "reserved_usd": "0.050000"
+    },
+    {
+      "purpose": "quality_contextual_audio_v3_supervised1",
+      "actual_usd": null,
+      "reserved_usd": "0.050000"
+    },
+    {
+      "purpose": "quality_contextual_audio_v3_supervised_transport_fixed1",
+      "actual_usd": "0.000837",
+      "reserved_usd": "0.050000"
+    }
+  ],
+  "sound_plan": {
+    "kind": "liquid_flow",
+    "cues_seconds": [
+      0.5,
+      2.0,
+      5.0,
+      8.0,
+      12.0
+    ]
+  },
+  "localizations": {
+    "en": {
+      "title": "Turquoise Basin Water Flow",
+      "description": "A macro cinematic video showing a steady stream of clear water flowing into a small turquoise ceramic basin. The shot features fixed macro lighting and realistic fluid physics. AI-generated visuals for TechnoInno with original synthesized liquid flow sound effects."
+    },
+    "fr": {
+      "title": "Écoulement d'eau dans un bassin turquoise",
+      "description": "Une vidéo macro cinématographique montrant un flux constant d'eau claire s'écoulant dans un petit bassin en céramique turquoise. Le plan présente un éclairage macro fixe et une physique des fluides réaliste. Visuels générés par IA pour TechnoInno avec des effets sonores de flux liquide synthétisés."
+    },
+    "es": {
+      "title": "Flujo de agua en cuenco turquesa",
+      "description": "Un video macro cinematográfico que muestra un flujo constante de agua clara en un pequeño cuenco de cerámica turquesa. El plano presenta iluminación macro fija y física de fluidos realista. Visuales generados por IA para TechnoInno con efectos de sonido de flujo líquido sintetizados originalmente."
+    },
+    "it": {
+      "title": "Flusso d'acqua in bacile turchese",
+      "description": "Un video macro cinematografico che mostra un flusso costante di acqua limpida che scorre in una piccola bacile di ceramica turchese. L'inquadratura presenta un'illuminazione macro fissa e una fisica dei fluidi realistica. Immagini generate dall'IA per TechnoInno con effetti sonori di flusso liquido sintetizzati."
+    },
+    "ru": {
+      "title": "Поток воды в бирюзовой чаше",
+      "description": "Макро-видео, демонстрирующее устойчивую струю чистой воды, впадающую в маленькую бирюзовую керамическую чашу. Кадр отличается фиксированным макро-освещением и реалистичной физикой жидкости. Визуал, созданный ИИ для TechnoInno, с оригинальными синтезированными звуками потока жидкости."
+    },
+    "zh-CN": {
+      "title": "绿松石色瓷盆注水",
+      "description": "一段宏观电影感视频，展示清澈的水流缓缓注入一个小巧的绿松石色瓷盆中。镜头采用固定宏观照明和真实的流体物理效果。为 TechnoInno 生成的 AI 视觉效果，配有原创合成的液体流动音效。"
+    }
+  },
+  "result": {
+    "job_id": "8db44bfd-f1b1-4433-a6ab-f4be088fc6da",
+    "video_id": "34bc70aa-fdbf-47d7-8136-8b53c927e695",
+    "file": "/data/jobs/8db44bfd-f1b1-4433-a6ab-f4be088fc6da/first-video.mp4",
+    "title": "Turquoise Basin Water Flow",
+    "sha256": "4d2b9396eab125cf6b5c907e52cfeebc6a7aa3830f66c13db49824bcf74a1a4a",
+    "technical_pass": true,
+    "quality_score": 90,
+    "quality_pass": false,
+    "quality_decision": "manual_review",
+    "production_profile": {
+      "version": "contextual_audio_v3",
+      "audio_mode": "action_matched_synthesized_effects",
+      "audio_ready": true,
+      "audio_target_lufs": -24,
+      "native_generated_audio": false,
+      "crossfade_seconds": 0.2,
+      "quality_minimum_score": 80,
+      "quality_visibility": "normal_playback_on_phone",
+      "minor_defects": "accepted",
+      "visible_major_defects": "timestamped_evidence_required",
+      "repair_priority": "local_edit",
+      "uncertain_findings": "manual_review",
+      "automatic_regeneration": false,
+      "automatic_music_fallback": false,
+      "unsupported_sound": "manual_review_before_video_spend",
+      "sound_kinds": [
+        "water_drops",
+        "liquid_flow",
+        "soft_grains",
+        "soft_friction",
+        "soft_roll"
+      ],
+      "external_samples": false,
+      "additional_audio_api_cost_usd": "0",
+      "sound_plan": {
+        "kind": "liquid_flow",
+        "cues_seconds": [
+          0.5,
+          2.0,
+          5.0,
+          8.0,
+          12.0
+        ]
+      },
+      "duration_seconds": 15.8,
+      "soundtrack_sha256": "b55eca95927cd5151114d118aac10c9e1ee4ea267c04ed80116b8a1bbf8f0c1d",
+      "soundtrack_source": "original locally synthesized action effects; no external samples"
+    },
+    "issues": [
+      {
+        "start_seconds": 0.0,
+        "end_seconds": 15.8,
+        "severity": "minor",
+        "visibility": "normal_playback",
+        "remedy": "local_edit",
+        "description": "Le son de l'eau ne correspond pas parfaitement aux visuels ; le bruit de l'eau est répétitif et ne semble pas réagir dynamiquement au remplissage progressif du bol.",
+        "evidence": "L'écoulement d'eau est continu, mais le son est une boucle synthétique constante qui ne reflète pas le changement de niveau sonore attendu avec le remplissage du récipient."
+      }
+    ],
+    "severe_defects": [],
+    "actual_cost_usd": "0.801011",
+    "unsettled_reservations": 2,
+    "published": false,
+    "scheduler_enabled": false,
+    "automatic_regeneration": false
+  },
+  "quality": {
+    "score": 90,
+    "approved": false,
+    "technical_pass": true,
+    "details": {
+      "visual_realism": 22,
+      "motion_quality": 17,
+      "aesthetic_quality": 18,
+      "prompt_compliance": 19,
+      "technical_quality": 14,
+      "technical_pass": true,
+      "severe_defects": [],
+      "issues": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 15.8,
+          "severity": "minor",
+          "visibility": "normal_playback",
+          "remedy": "local_edit",
+          "description": "Le son de l'eau ne correspond pas parfaitement aux visuels ; le bruit de l'eau est répétitif et ne semble pas réagir dynamiquement au remplissage progressif du bol.",
+          "evidence": "L'écoulement d'eau est continu, mais le son est une boucle synthétique constante qui ne reflète pas le changement de niveau sonore attendu avec le remplissage du récipient."
+        }
+      ],
+      "audio_coherence": "problem"
+    }
+  },
+  "publication_result": null,
+  "counts": {
+    "production_jobs": 3,
+    "video_generations": 6,
+    "publications": 2,
+    "model_usage": 18
+  },
+  "global_scheduler": false,
+  "global_spending_authority": false,
+  "global_publication_authority": false
+}

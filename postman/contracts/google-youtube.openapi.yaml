@@ -1,0 +1,64 @@
+openapi: 3.0.3
+info:
+  title: Google OAuth and YouTube channel verification subset
+  version: 2026-11-04
+  description: >-
+    Locally maintained subset from official Google web-server OAuth and channels.list
+    documentation. Synthetic test values only. Not a provider-owned specification.
+servers:
+  - url: https://oauth2.googleapis.com
+paths:
+  /token:
+    post:
+      operationId: exchangeAuthorizationCode
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              required: [client_id, client_secret, code, grant_type, redirect_uri, code_verifier]
+              properties:
+                client_id: {type: string}
+                client_secret: {type: string}
+                code: {type: string}
+                grant_type: {type: string, enum: [authorization_code]}
+                redirect_uri: {type: string}
+                code_verifier: {type: string}
+      responses:
+        '200':
+          description: Authorized token grant with offline consent
+          content:
+            application/json:
+              example:
+                access_token: fake-access-token
+                refresh_token: fake-refresh-token
+                token_type: Bearer
+                expires_in: 3600
+                scope: https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly
+        '400':
+          description: Invalid or expired authorization code
+          content:
+            application/json:
+              example: {error: invalid_grant}
+        '503':
+          description: Temporary upstream failure scenario
+  /youtube/v3/channels:
+    get:
+      operationId: verifyOwnerChannel
+      servers:
+        - url: https://www.googleapis.com
+      parameters:
+        - {name: part, in: query, required: true, schema: {type: string, enum: [snippet]}}
+        - {name: mine, in: query, required: true, schema: {type: string, enum: ['true']}}
+      responses:
+        '200':
+          description: Channel associated with the authorized grant
+          content:
+            application/json:
+              example:
+                items:
+                  - id: UC8DbuevZRxVTWxltG9oDFRw
+                    snippet: {title: TechnoInno, customUrl: '@techno-inno'}
+        '403':
+          description: API or scope unavailable

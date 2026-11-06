@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TechnoInno · Owner sign in</title>
+<style>
+body{margin:0;background:#0c1424;color:#eaf2fb;font:17px/1.6 system-ui,sans-serif}
+main{max-width:480px;margin:12vh auto;padding:30px}small{color:#8fded7;letter-spacing:.1em}
+h1{font-size:36px;line-height:1.2}p{color:#aebed4}label{display:block;margin-top:24px}
+input,button{box-sizing:border-box;width:100%;padding:14px;border-radius:8px;font:inherit}
+input{margin-top:8px;background:#152139;color:#eaf2fb;border:1px solid #40506c}
+button{margin-top:20px;background:#8fded7;color:#0c1424;border:0;cursor:pointer}
+.message{color:#ffc8b8;min-height:1em}
+</style>
+<main><small>TECHNOINNO · VIDEO STUDIO</small><h1>Owner sign in</h1>
+<p>Use the studio owner password. Google authorization follows inside the control room.</p>
+<form action="/login" method="post">
+<input type="hidden" name="csrf" value="{{csrf}}">
+<label for="password">Owner password</label>
+<input id="password" type="password" name="password" autocomplete="current-password" required maxlength="512">
+<button type="submit">Sign in</button><p class="message" role="alert">{{message}}</p>
+</form><p>Your Google password is entered only on Google’s own sign-in page.</p></main></html>

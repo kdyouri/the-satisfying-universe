@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-05",
+  "upload": {
+    "video_id": "qNsEQFHoMdk",
+    "publication_id": "0176d10c-b4ce-46ec-8e2a-4817bbd5d93c",
+    "sha256": "29d699d71eb424c369bef415d5191b313f806961aec46907aee5d836a17a4eaf",
+    "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+    "url": "https://www.youtube.com/watch?v=qNsEQFHoMdk",
+    "privacy": "public",
+    "default_language": "en",
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "it",
+      "ru",
+      "zh-CN"
+    ],
+    "localizations": {
+      "zh-CN": {
+        "title": "令人着迷的金色螺旋 ✨",
+        "description": "舒缓的律动、金色的质感，给自己片刻放松。\n\n由人工智能为 TechnoInno 生成的画面，搭配原创音乐。\n\n#Shorts #Satisfying #OddlySatisfying #TechnoInno"
+      },
+      "fr": {
+        "title": "Cette spirale dorée est hypnotisante ✨",
+        "description": "Un mouvement lent, une texture dorée, quelques secondes pour souffler.\n\nCréation visuelle générée avec une IA pour TechnoInno. Musique originale.\n\n#Shorts #Satisfying #OddlySatisfying #TechnoInno"
+      },
+      "it": {
+        "title": "Questa spirale dorata è ipnotica ✨",
+        "description": "Un movimento lento, una texture dorata e qualche secondo per rilassarti.\n\nImmagini generate con l’IA per TechnoInno. Musica originale.\n\n#Shorts #Satisfying #OddlySatisfying #TechnoInno"
+      },
+      "es": {
+        "title": "Esta espiral dorada es hipnótica ✨",
+        "description": "Un movimiento suave, una textura dorada y unos segundos para relajarte.\n\nImágenes generadas con IA para TechnoInno. Música original.\n\n#Shorts #Satisfying #OddlySatisfying #TechnoInno"
+      },
+      "ru": {
+        "title": "Эта золотая спираль завораживает ✨",
+        "description": "Плавное движение, золотистая текстура и несколько секунд, чтобы расслабиться.\n\nВидео создано с помощью ИИ для TechnoInno. Оригинальная музыка.\n\n#Shorts #Satisfying #OddlySatisfying #TechnoInno"
+      },
+      "en": {
+        "title": "This Golden Spiral Is Hypnotic ✨",
+        "description": "Gentle motion, golden textures, and a few seconds to unwind.\n\nAI-generated visuals created for TechnoInno. Original music.\n\n#Shorts #Satisfying #OddlySatisfying #TechnoInno"
+      }
+    },
+    "translations_verified": true,
+    "processing_succeeded": true,
+    "region_restriction": null,
+    "status": "published_public",
+    "scheduler_enabled": false
+  },
+  "localized_readback": {
+    "en": {
+      "title": "This Golden Spiral Is Hypnotic ✨",
+      "title_and_description_match": true
+    },
+    "fr": {
+      "title": "Cette spirale dorée est hypnotisante ✨",
+      "title_and_description_match": true
+    },
+    "es": {
+      "title": "Esta espiral dorada es hipnótica ✨",
+      "title_and_description_match": true
+    },
+    "it": {
+      "title": "Questa spirale dorata è ipnotica ✨",
+      "title_and_description_match": true
+    },
+    "ru": {
+      "title": "Эта золотая спираль завораживает ✨",
+      "title_and_description_match": true
+    },
+    "zh-CN": {
+      "title": "令人着迷的金色螺旋 ✨",
+      "title_and_description_match": true
+    }
+  },
+  "published_at": "2026-11-05T12:33:25.335536+00:00",
+  "generation_count": 2,
+  "publication_count": 1,
+  "model_usage_count": 5,
+  "confirmed_ai_cost_usd": "0.800526",
+  "new_uploads": 0,
+  "new_ai_calls": 0,
+  "original_job_status": "rejected",
+  "scheduler_enabled": false,
+  "automatic_publishing_enabled": false,
+  "automatic_spending_enabled": false,
+  "budget_caps_usd": "0",
+  "dashboard_reports_public_video": true
+}

@@ -1,0 +1,26 @@
+{
+  "http_status": 200,
+  "result": {
+    "video_id": "qNsEQFHoMdk",
+    "publication_id": "0176d10c-b4ce-46ec-8e2a-4817bbd5d93c",
+    "sha256": "29d699d71eb424c369bef415d5191b313f806961aec46907aee5d836a17a4eaf",
+    "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+    "url": "https://www.youtube.com/watch?v=qNsEQFHoMdk",
+    "privacy": "private",
+    "default_language": "fr",
+    "languages": [
+      "fr"
+    ],
+    "localizations": {
+      "fr": {
+        "title": "Cette spirale dorée est hypnotisante ✨",
+        "description": "Un mouvement lent, une texture dorée, quelques secondes pour souffler.\n\nCréation visuelle générée avec une IA pour TechnoInno. Musique originale.\n\n#Shorts #Satisfying #OddlySatisfying #TechnoInno"
+      }
+    },
+    "translations_verified": false,
+    "processing_succeeded": true,
+    "region_restriction": null,
+    "status": "not_published_or_not_verified",
+    "scheduler_enabled": false
+  }
+}

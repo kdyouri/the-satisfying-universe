@@ -1,0 +1,18 @@
+{
+  "theme": "A single clear water droplet rolling slowly along the groove of a blue ceramic leaf, stationary macro camera, simple realistic motion and calming studio light",
+  "visibility": "private",
+  "maximum_new_spend_usd": "1.00",
+  "maximum_reserved_stages_usd": "0.86",
+  "planned_video_generation_usd": "0.80",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "zh-CN"
+  ],
+  "automatic_regeneration": false,
+  "scheduler_enabled": false,
+  "requires_explicit_human_budget_authorization": true
+}

@@ -1,0 +1,9 @@
+{
+  "upstream_schema_simplified": true,
+  "full_local_score_and_audio_constraints_preserved": true,
+  "price_cap_no_fallback_and_parameter_requirements_preserved": true,
+  "input_schema_unchanged": true,
+  "real_paid_requests": 0,
+  "checks_passed": 8,
+  "reason": "Google reported generic INVALID_ARGUMENT; compact schema and standard endpoint are a controlled compatibility correction, not proof of an isolated cause."
+}

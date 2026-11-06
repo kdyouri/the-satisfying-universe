@@ -1,0 +1,38 @@
+{
+  "upload": {
+    "publication_id": "0176d10c-b4ce-46ec-8e2a-4817bbd5d93c",
+    "video_id": "qNsEQFHoMdk",
+    "status": "processed_private",
+    "privacy": "private",
+    "requested_privacy": "private",
+    "url": "https://www.youtube.com/watch?v=qNsEQFHoMdk",
+    "last_error": null,
+    "verified": {
+      "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+      "privacy": "private",
+      "title": "Cette spirale dorée est hypnotisante ✨",
+      "upload_status": "processed",
+      "processing_status": "succeeded",
+      "duration": "PT16S",
+      "definition": "hd",
+      "synthetic_media": null
+    },
+    "sha256": "29d699d71eb424c369bef415d5191b313f806961aec46907aee5d836a17a4eaf"
+  },
+  "generation_count": 2,
+  "publication_count": 1,
+  "model_usage_count": 5,
+  "confirmed_ai_cost_usd": "0.800526",
+  "new_ai_calls": 0,
+  "original_job_status": "rejected",
+  "scheduler_enabled": false,
+  "public_publishing_enabled": false,
+  "automatic_spending_enabled": false,
+  "budget_caps_usd": "0",
+  "account_approved_for_automatic_publication": false,
+  "session_reference_encrypted": true,
+  "synthetic_media_disclosure_sent": true,
+  "synthetic_media_disclosure_readback": null,
+  "dashboard_links_to_uploaded_video": true,
+  "upload_module_sha256": "8865fa907ccf870ce30cc082488c606ff03db82feae2e2f0808b577e2cb96892"
+}

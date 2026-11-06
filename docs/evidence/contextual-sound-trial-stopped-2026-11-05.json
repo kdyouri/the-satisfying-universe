@@ -1,0 +1,95 @@
+{
+  "job_id": "8db44bfd-f1b1-4433-a6ab-f4be088fc6da",
+  "google_credential_updated_at": "2026-11-05T20:46:56.227643+00:00",
+  "status": "owner_attention",
+  "reason": "Provider connection failed; do not repeat a paid submission",
+  "calls": {
+    "creative": "done",
+    "quality_contextual_audio_v3": "submitting"
+  },
+  "clips": [
+    {
+      "index": 0,
+      "status": "completed",
+      "remote_id_known": true
+    },
+    {
+      "index": 1,
+      "status": "completed",
+      "remote_id_known": true
+    }
+  ],
+  "actual_usd": "0.800174",
+  "held_usd": "0.050000",
+  "maximum_authorized_usd": "1.00",
+  "charges": [
+    {
+      "purpose": "creative",
+      "actual_usd": "0.000174",
+      "reserved_usd": "0.010000"
+    },
+    {
+      "purpose": "video",
+      "actual_usd": "0.400000",
+      "reserved_usd": "0.400000"
+    },
+    {
+      "purpose": "video",
+      "actual_usd": "0.400000",
+      "reserved_usd": "0.400000"
+    },
+    {
+      "purpose": "quality_contextual_audio_v3",
+      "actual_usd": null,
+      "reserved_usd": "0.050000"
+    }
+  ],
+  "sound_plan": {
+    "kind": "liquid_flow",
+    "cues_seconds": [
+      0.5,
+      2.0,
+      5.0,
+      8.0,
+      12.0
+    ]
+  },
+  "localizations": {
+    "en": {
+      "title": "Turquoise Basin Water Flow",
+      "description": "A macro cinematic video showing a steady stream of clear water flowing into a small turquoise ceramic basin. The shot features fixed macro lighting and realistic fluid physics. AI-generated visuals for TechnoInno with original synthesized liquid flow sound effects."
+    },
+    "fr": {
+      "title": "Écoulement d'eau dans un bassin turquoise",
+      "description": "Une vidéo macro cinématographique montrant un flux constant d'eau claire s'écoulant dans un petit bassin en céramique turquoise. Le plan présente un éclairage macro fixe et une physique des fluides réaliste. Visuels générés par IA pour TechnoInno avec des effets sonores de flux liquide synthétisés."
+    },
+    "es": {
+      "title": "Flujo de agua en cuenco turquesa",
+      "description": "Un video macro cinematográfico que muestra un flujo constante de agua clara en un pequeño cuenco de cerámica turquesa. El plano presenta iluminación macro fija y física de fluidos realista. Visuales generados por IA para TechnoInno con efectos de sonido de flujo líquido sintetizados originalmente."
+    },
+    "it": {
+      "title": "Flusso d'acqua in bacile turchese",
+      "description": "Un video macro cinematografico che mostra un flusso costante di acqua limpida che scorre in una piccola bacile di ceramica turchese. L'inquadratura presenta un'illuminazione macro fissa e una fisica dei fluidi realistica. Immagini generate dall'IA per TechnoInno con effetti sonori di flusso liquido sintetizzati."
+    },
+    "ru": {
+      "title": "Поток воды в бирюзовой чаше",
+      "description": "Макро-видео, демонстрирующее устойчивую струю чистой воды, впадающую в маленькую бирюзовую керамическую чашу. Кадр отличается фиксированным макро-освещением и реалистичной физикой жидкости. Визуал, созданный ИИ для TechnoInno, с оригинальными синтезированными звуками потока жидкости."
+    },
+    "zh-CN": {
+      "title": "绿松石色瓷盆注水",
+      "description": "一段宏观电影感视频，展示清澈的水流缓缓注入一个小巧的绿松石色瓷盆中。镜头采用固定宏观照明和真实的流体物理效果。为 TechnoInno 生成的 AI 视觉效果，配有原创合成的液体流动音效。"
+    }
+  },
+  "result": null,
+  "quality": null,
+  "publication_result": null,
+  "counts": {
+    "production_jobs": 3,
+    "video_generations": 6,
+    "publications": 2,
+    "model_usage": 16
+  },
+  "global_scheduler": false,
+  "global_spending_authority": false,
+  "global_publication_authority": false
+}

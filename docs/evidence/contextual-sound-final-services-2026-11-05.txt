@@ -1,0 +1,7 @@
+NAME                    IMAGE                  COMMAND                  SERVICE    CREATED         STATUS                   PORTS
+technoinno-api-1        technoinno-api         "uvicorn tsu.api:app…"   api        8 minutes ago   Up 8 minutes (healthy)   127.0.0.1:8000->8000/tcp
+technoinno-postgres-1   postgres:17-bookworm   "docker-entrypoint.s…"   postgres   24 hours ago    Up 24 hours (healthy)    5432/tcp
+technoinno-redis-1      redis:7-alpine         "docker-entrypoint.s…"   redis      24 hours ago    Up 24 hours (healthy)    6379/tcp
+technoinno-api-1
+technoinno-redis-1
+technoinno-postgres-1

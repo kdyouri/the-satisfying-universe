@@ -1,0 +1,37 @@
+{
+  "/admin:text/html": {
+    "status": 303,
+    "location": "/login",
+    "no_store": true
+  },
+  "/admin:application/json": {
+    "status": 401,
+    "location": null,
+    "no_store": true
+  },
+  "/api/overview:text/html": {
+    "status": 401,
+    "location": null,
+    "no_store": true
+  },
+  "/login:default": {
+    "status": 200,
+    "location": null,
+    "no_store": true
+  },
+  "/about:default": {
+    "status": 200,
+    "location": null,
+    "no_store": true
+  },
+  "/privacy:default": {
+    "status": 200,
+    "location": null,
+    "no_store": true
+  },
+  "/terms:default": {
+    "status": 200,
+    "location": null,
+    "no_store": true
+  }
+}

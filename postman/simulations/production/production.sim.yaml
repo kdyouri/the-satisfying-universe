@@ -1,0 +1,11 @@
+simulation: production
+routing: path
+mocks:
+  - name: openrouter
+    routeKey: openrouter
+    origin: [openrouter.ai]
+    path: postman/mocks/openrouter
+  - name: youtube-upload
+    routeKey: youtube-upload
+    origin: [oauth2.googleapis.com, www.googleapis.com]
+    path: postman/mocks/youtube-upload

@@ -1,0 +1,33 @@
+{
+  "verified_at_utc": "2026-11-05T11:38:30.053386+00:00",
+  "profile": {
+    "version": "balanced_audio_v2",
+    "audio_mode": "calm_music_in_postproduction",
+    "audio_ready": true,
+    "audio_target_lufs": -24,
+    "native_generated_audio": false,
+    "crossfade_seconds": 0.2,
+    "quality_minimum_score": 80,
+    "quality_visibility": "normal_playback_on_phone",
+    "minor_defects": "accepted",
+    "visible_major_defects": "timestamped_evidence_required",
+    "repair_priority": "local_edit",
+    "uncertain_findings": "manual_review",
+    "automatic_regeneration": false
+  },
+  "protected_api_profile_verified": true,
+  "production_module_sha256": "ec75ab149697994673870aae8e2162d09516177f72330dd79792af3bbe8c02b5",
+  "confirmed_charges_usd": "0.800526",
+  "model_usage_count": 5,
+  "generations": 2,
+  "publications": 0,
+  "legacy_result_preserved": true,
+  "legacy_resume_no_provider_access": true,
+  "flags": {
+    "spending_authorized": false,
+    "publishing_authorized": false,
+    "scheduler_enabled": false,
+    "daily_cap_usd": "0",
+    "monthly_cap_usd": "0"
+  }
+}

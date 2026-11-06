@@ -1,0 +1,118 @@
+{
+  "job_id": "a5e92282-0636-4e20-a30f-0b3404521c06",
+  "job_status": "rejected",
+  "brief_source": "operator-prepared; no replacement creative API call",
+  "result": {
+    "job_id": "a5e92282-0636-4e20-a30f-0b3404521c06",
+    "video_id": "290cea81-b7e3-4a52-b536-e32f046fa15e",
+    "file": "/data/pilot/first-video/first-video.mp4",
+    "title": "Cette spirale dor\u00e9e est hypnotisante \u2728",
+    "sha256": "684923e57645eca724a959706becf13aedfbc6e2a0e1b41e7f0d10ec0b92d8b6",
+    "technical_pass": true,
+    "quality_score": 82,
+    "quality_pass": false,
+    "severe_defects": [
+      "La jonction temporelle \u00e0 8 secondes pr\u00e9sente une rupture de continuit\u00e9 visuelle majeure",
+      "Comportement physique incoh\u00e9rent du filet de liquide lors de la transition",
+      "Instabilit\u00e9 du flux et scintillement dans la g\u00e9om\u00e9trie de la spirale"
+    ],
+    "actual_cost_usd": "0.800526",
+    "unsettled_reservations": 2,
+    "published": false,
+    "scheduler_enabled": false,
+    "automatic_regeneration": false
+  },
+  "flags": {
+    "spending_authorized": false,
+    "publishing_authorized": false,
+    "scheduler_enabled": false,
+    "daily_budget_usd": "0",
+    "monthly_budget_usd": "0"
+  },
+  "budget_frozen": false,
+  "publications": 0,
+  "generations": [
+    {
+      "clip_index": 0,
+      "status": "completed",
+      "remote_job_id": "gen-vid-1793832882-RG80p54eXiWdOy3hgNgS",
+      "cost_usd": "0.400000",
+      "sha256": "e29cb66a8683e57fded884583d5f6eeaa98237dcce0a9382580acb55a66de642"
+    },
+    {
+      "clip_index": 1,
+      "status": "completed",
+      "remote_job_id": "gen-vid-1793832994-EGNGDnAdAW9OcM38j0lG",
+      "cost_usd": "0.400000",
+      "sha256": "93ba253b06c84b1c93c3b678b005aa69b4a67ea2f5c998640e0f34de30d94fa2"
+    }
+  ],
+  "charges": [
+    {
+      "operation": "owner:first-video:v1:creative",
+      "model": "google/gemma-4-26b-a4b-it",
+      "status": "reserved",
+      "reserved_usd": "0.010000",
+      "actual_usd": null,
+      "remote_request_id": null
+    },
+    {
+      "operation": "owner:first-video:v1:clip:0",
+      "model": "google/veo-3.1-lite",
+      "status": "settled",
+      "reserved_usd": "0.400000",
+      "actual_usd": "0.400000",
+      "remote_request_id": "gen-vid-1793832882-RG80p54eXiWdOy3hgNgS"
+    },
+    {
+      "operation": "owner:first-video:v1:clip:1",
+      "model": "google/veo-3.1-lite",
+      "status": "settled",
+      "reserved_usd": "0.400000",
+      "actual_usd": "0.400000",
+      "remote_request_id": "gen-vid-1793832994-EGNGDnAdAW9OcM38j0lG"
+    },
+    {
+      "operation": "owner:first-video:v1:quality",
+      "model": "google/gemini-3.1-flash-lite",
+      "status": "reserved",
+      "reserved_usd": "0.050000",
+      "actual_usd": null,
+      "remote_request_id": null
+    },
+    {
+      "operation": "owner:first-video:v1:quality_proxy",
+      "model": "google/gemini-3.1-flash-lite",
+      "status": "settled",
+      "reserved_usd": "0.050000",
+      "actual_usd": "0.000526",
+      "remote_request_id": "gen-1793833397-xl0ytzdSwqZhZg4NbUfU"
+    }
+  ],
+  "quality": [
+    {
+      "score": 82,
+      "approved": false,
+      "details": {
+        "visual_realism": 22,
+        "motion_quality": 14,
+        "aesthetic_quality": 18,
+        "prompt_compliance": 20,
+        "technical_quality": 8,
+        "technical_pass": false,
+        "severe_defects": [
+          "La jonction temporelle \u00e0 8 secondes pr\u00e9sente une rupture de continuit\u00e9 visuelle majeure",
+          "Comportement physique incoh\u00e9rent du filet de liquide lors de la transition",
+          "Instabilit\u00e9 du flux et scintillement dans la g\u00e9om\u00e9trie de la spirale"
+        ]
+      }
+    }
+  ],
+  "key_usage_verification": {
+    "http_status": 200,
+    "usage_usd": 0.800526
+  },
+  "master_sha256": "684923e57645eca724a959706becf13aedfbc6e2a0e1b41e7f0d10ec0b92d8b6",
+  "recorded_at_utc": "2026-11-04T23:04:55.128456+00:00",
+  "local_master_sha256": "684923e57645eca724a959706becf13aedfbc6e2a0e1b41e7f0d10ec0b92d8b6"
+}

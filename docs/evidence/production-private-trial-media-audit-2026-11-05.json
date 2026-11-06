@@ -1,0 +1,21 @@
+{
+  "job_id": "a13b3205-90ae-49ef-8675-24bd919ff709",
+  "technical_pass": true,
+  "duration_seconds": 15.8,
+  "audio_levels": {
+    "mean_db": -25.9,
+    "peak_db": -15.0
+  },
+  "master_bytes": 8745758,
+  "review_bytes": 1295354,
+  "committed_including_uncertain_usd": "0.850132",
+  "additional_review_reservation_usd": "0.05",
+  "maximum_total_after_reservation_usd": "0.900132",
+  "original_uncertain_call_preserved": true,
+  "new_video_generations": 0,
+  "sha256": "9f1babe950ef63a4f1ec0294c02a3021dee794218c89420b5accf202293416f6",
+  "local_deliverable": "/Users/macbook/Documents/ChatGPT/MyVideos/the-satisfying-universe/generated/private-trial/blue-ceramic-leaf.mp4",
+  "youtube_uploaded": false,
+  "ai_quality_approval": false,
+  "automatic_scheduling_enabled": false
+}

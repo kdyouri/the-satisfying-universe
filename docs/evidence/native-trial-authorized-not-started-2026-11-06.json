@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "owner_messages": [
+    "On fait le nouvel essai",
+    "continuer"
+  ],
+  "accepted_previous_proposal": "One new private native-audio trial; maximum 1.70 USD",
+  "maximum_additional_usd": "1.70",
+  "visibility": "private",
+  "channel": "@techno-inno",
+  "duration_seconds": 15,
+  "generate_audio": true,
+  "postproduction": false,
+  "scheduler_enabled": false,
+  "paid_calls_started": 0,
+  "uploads_started": 0,
+  "execution_state": "not_started_approval_service_quota",
+  "blocked_action": "Read-only SSH preflight to the authorized VPS",
+  "automatic_review_error": "Automatic approval review failed: Quota exceeded. Check your plan and billing details. The action was not executed because automatic approval review could not be completed.",
+  "scope_tests": "15 offline checks passed; no HTTP provider or PostgreSQL integration run for the new scope changes",
+  "local_changes_deployed": false,
+  "authorization_requires_reconfirmation": false
+}

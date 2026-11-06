@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "operation": "owner:native-audio-private-trial:v2",
+  "authorization": {
+    "maximum_additional_usd": "2.00",
+    "theme": "free subject chosen by the creative model",
+    "visibility": "private",
+    "authorization_reference": "owner-instruction-2026-11-06-native-trial-v2-cap-2usd"
+  },
+  "execution": {
+    "free_preflight_passed": true,
+    "creative_call_settled_usd": "0.000111",
+    "concept": "A macro study of a single, thick globule of translucent violet honey slowly oozing and folding over itself on a textured matte white marble surface, emphasizing viscosity and light refraction.",
+    "video_generation_submitted": 1,
+    "remote_generation_id": "gen-vid-1793975851-mTAAtfBl39jlBirQ93km",
+    "provider_status": "failed",
+    "provider_error": "Video generation failed",
+    "provider_final_cost_evidence": false,
+    "video_file_created": false,
+    "quality_reviews": 0,
+    "youtube_uploads": 0,
+    "polling_deadline_first_run": "2026-11-06T14:57:49Z",
+    "terminal_reconciliation_after_fix": "2026-11-06T15:24:06Z",
+    "resubmissions": 0,
+    "automatic_retries": 0
+  },
+  "job_final": {
+    "job_id": "83900e02-818d-42f1-b0de-5868dd40be73",
+    "status": "owner_attention",
+    "reason": "Video generation failed",
+    "generation_record_status": "pending",
+    "reservation_released": false
+  },
+  "accounting_after_run": {
+    "trial_actual_usd": "0.000111",
+    "trial_held_usd": "1.563840",
+    "trial_cap_usd": "2.00",
+    "within_cap": true,
+    "jobs": 5,
+    "generations": 8,
+    "publications": 2,
+    "usage_records": 22,
+    "global_actual_usd": "2.402654",
+    "global_held_usd": "3.427680"
+  },
+  "root_cause_found_and_fixed": {
+    "defect": "A 200 response whose JSON body contains an error field was treated as a transient provider error by the polling loop, which retried silently until the 20-minute polling deadline instead of recognizing the terminal failure.",
+    "fix": "tsu/openrouter.py now raises ProviderTerminalError for a parsed error body (safe detail only, no raw body or URL); the clip poll loop re-raises it instead of retrying; free GET catalogue/key calls and paid POSTs keep their previous stop-without-retry behavior.",
+    "tests": "new regression test test_terminal_provider_error_body_stops_polling_and_keeps_known_intent; suite 179 passed 0 skipped",
+    "test_evidence": "docs/evidence/terminal-error-fix-tests-2026-11-06.xml",
+    "api_image_after_fix": "sha256:e1835e958ce0c04e17c8e0d204a821dea4ce3615342b71624114d9deb705618a"
+  },
+  "model_assessment": {
+    "model": "google/gemini-omni-1.2-flash",
+    "consecutive_terminal_failures_identical_signature": 2,
+    "conclusion": "Two independent 15-second native-audio generations failed terminally at the provider with no cost evidence and the same error body; this candidate model should not be retried without a new owner decision, and a different native-audio model or the proven Veo path requires explicit authorization."
+  },
+  "global_controls": {
+    "spending_authorized": false,
+    "publishing_authorized": false,
+    "daily_scheduler": false,
+    "daily_budget_usd": "0",
+    "monthly_budget_usd": "0"
+  },
+  "prohibitions": [
+    "do not resubmit or regenerate either failed generation",
+    "do not release either 1.563840 USD reservation without per-request cost evidence",
+    "no further paid call under this consumed 2.00 USD authorization",
+    "no public upload"
+  ]
+}

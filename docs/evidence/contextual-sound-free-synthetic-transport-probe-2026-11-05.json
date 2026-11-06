@@ -1,0 +1,15 @@
+{
+  "no_real_api_key_used": true,
+  "invalid_model": true,
+  "new_paid_calls": 0,
+  "body_bytes": 4805581,
+  "synthetic_data_only": true,
+  "user_media_transmitted": false,
+  "safe_exception_classes": [
+    "ConnectionError",
+    "ProtocolError",
+    "TimeoutError"
+  ],
+  "write_timeout_message_detected": true,
+  "elapsed_seconds": 10.27
+}

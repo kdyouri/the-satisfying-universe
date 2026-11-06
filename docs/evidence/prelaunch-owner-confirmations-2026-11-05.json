@@ -1,0 +1,21 @@
+{
+  "legal_pages": {
+    "approved": true,
+    "reference": "Owner reply 2026-11-05: Oui, je valide les textes et leur publication",
+    "urls": [
+      "https://studio.technoinno.live/about",
+      "https://studio.technoinno.live/privacy",
+      "https://studio.technoinno.live/terms"
+    ]
+  },
+  "sound_trial": {
+    "approved": true,
+    "reference": "Owner reply 2026-11-05: Oui, un essai privé, maximum 1 USD",
+    "maximum_additional_usd": "1.00",
+    "operation": "owner:contextual-sound-private-trial:v1",
+    "visibility": "private",
+    "scheduler_activation": false
+  },
+  "recurring_authorization": false,
+  "real_email_sending_authorization": false
+}

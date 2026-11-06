@@ -1,0 +1,82 @@
+purpose:
+  stands_in_for: Google OAuth token exchange and YouTube authorized channel lookup
+  unblocks: Verify code exchange, PKCE, channel binding and safe failures without
+    real user consent
+assumptions:
+- id: live-personal-edit-consent
+  status: supported
+  claim: The owner personally completed the additional editing consent for the configured
+    TechnoInno channel and that grant supports this video's metadata/public-status update.
+  reason: The owner confirmed completion; the installed plan reports edit access and actual
+    videos.update operations and exact-channel localized readbacks succeeded.
+  verification: On 2026-11-05 the protected publication endpoint returned HTTP 200/published_public
+    for qNsEQFHoMdk. All six localized reads match. Consent alone did not publish; the separate
+    already-authorized publication call performed the update. Long-term Testing-mode grant
+    survival remains unverified and is still required before unattended operation.
+  source: docs/evidence/youtube-multilingual-consented-plan-2026-11-05.json;
+    docs/evidence/youtube-multilingual-public-live-2026-11-05.json
+  updated_at: '2026-11-05'
+- id: incremental-edit-consent-caller
+  status: supported
+  claim: New connections request the original scopes plus edit access, preserve PKCE/state
+    and reject partial edit consent without replacing an existing credential.
+  reason: The actual OAuth client and connection service ran against HTTP stand-ins and
+    existing encrypted-grant preservation was checked in regression tests.
+  verification: On 2026-11-05 ten HTTP scenarios passed, including missing_edit_scope;
+    the full 98-test suite also passed, including partial consent preservation, cross-owner
+    binding and single-use callbacks. New URLs include include_granted_scopes=true and
+    youtube.force-ssl. Real edit consent remains an owner step; read/upload consent is
+    already live and does not need to be recreated if the edit flow is cancelled.
+  source: docs/evidence/google-oauth-edit-simulation-2026-11-05.json;
+    docs/evidence/youtube-multilingual-tests-2026-11-05.xml; tsu/youtube_auth.py
+  updated_at: '2026-11-05'
+- id: google-offline-grant
+  status: supported
+  claim: Google web-server OAuth documents refresh-token issuance with offline access
+    and appropriate user consent.
+  reason: Official documentation supports the request pattern; actual grant for this
+    client remains unverified.
+  verification: Read Google web-server OAuth documentation on 2026-11-04. Real consent
+    has not occurred.
+  source: https://developers.google.com/identity/protocols/oauth2/web-server
+  updated_at: '2026-11-04'
+- id: authenticated-channel-lookup
+  status: supported
+  claim: YouTube channels.list supports mine=true to look up the authenticated user's
+    channel.
+  reason: Official channels.list and authorization documentation describe this filter
+    with OAuth access.
+  verification: Documentation read on 2026-11-04; owner's OAuth grant not yet tested.
+  source: https://developers.google.com/youtube/data/reference/rest/v3/channels/list
+  updated_at: '2026-11-04'
+- id: caller-safe-failure-behavior
+  status: supported
+  claim: In the nine local HTTP scenarios run, the real caller stored a credential
+    only for the valid expected-channel grant, and rejected wrong/empty channels,
+    missing refresh token/scope, upstream errors and a timeout.
+  reason: Synthetic HTTP responses exercised the official Google client, application
+    connection service and local database. This establishes caller behavior in the
+    modeled cases, not real Google client approval or consent.
+  verification: '2026-11-04: nine scenarios passed with synthetic credentials; token
+    fields/PKCE, channel parameters, request events and persisted credential counts
+    were checked. The TLS proxy could not run with Python 3.13 because its certificate
+    lacked AKI, so supported one-port HTTP mode was used. Production TLS enforcement
+    was unchanged. Provider-owned mock discovery was skipped because signed-in CLI
+    status fails with a macOS Keychain error.'
+  source: scripts/verify_google_simulation.py; postman/contracts/google-youtube.openapi.yaml;
+    docs/evidence/google-oauth-simulation-2026-11-04.json; tsu/youtube_auth.py
+  updated_at: '2026-11-04'
+- id: live-client-readiness
+  status: unknown
+  claim: The owner's web client can obtain the required grant for the configured TechnoInno
+    channel.
+  reason: Credentials and public channel ID alone cannot establish OAuth consent or
+    enabled API access.
+  verification: Awaiting owner consent after HTTPS deployment and redirect configuration.
+  source: docs/YOUTUBE_LAUNCH.md
+  updated_at: '2026-11-04'
+fingerprints:
+- id: local-oauth-m2
+  date: '2026-11-04'
+  commit: null
+  cli: 1.80.0

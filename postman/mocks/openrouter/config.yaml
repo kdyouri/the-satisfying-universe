@@ -1,0 +1,12 @@
+version: 1
+id: 8d79ea11-3514-478e-b59a-20a31a7fe6b6
+name: openrouter
+slug: openrouter
+protocol: http
+interceptRequests: true
+origin: [openrouter.ai]
+port: 4501
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true

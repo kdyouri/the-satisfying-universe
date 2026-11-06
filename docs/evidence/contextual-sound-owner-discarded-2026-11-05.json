@@ -1,0 +1,13 @@
+{
+  "job_id": "8db44bfd-f1b1-4433-a6ab-f4be088fc6da",
+  "status": "cancelled",
+  "never_publish": true,
+  "private_upload_authorization_withdrawn": true,
+  "actual_usd_preserved": "0.801011",
+  "held_usd_preserved": "0.100000",
+  "existing_publications": 2,
+  "assets_deleted": false,
+  "new_paid_calls": 0,
+  "new_uploads": 0,
+  "scheduler_enabled": false
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-05",
+  "environment": "local Postman stand-in, synthetic credentials and video",
+  "requests_observed": 654,
+  "video_metadata_or_status_puts": 30,
+  "successful_puts": 22,
+  "tests_passed": 98,
+  "publication_scenarios": 11,
+  "oauth_scenarios": 10,
+  "real_google_writes": 0
+}

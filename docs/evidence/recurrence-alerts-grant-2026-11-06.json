@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "operation": "recurrence activation progress",
+  "smtp_alerts": {
+    "provider": "smtp.gmail.com:587 STARTTLS, user admin.technoinno@gmail.com, app password only (stored in VPS .env 0600; never in docs)",
+    "delivery_test": "3 pending alerts accepted by SMTP, 0 uncertain",
+    "owner_confirmation": "owner confirmed receiving the 3 alert emails",
+    "outbound_alerts_confirmed": true
+  },
+  "google_grant": {
+    "owner_action": "switched the Google OAuth app to Production, then reconnected via https://studio.technoinno.live (Connect YouTube)",
+    "new_flow_consumed_at": "2026-11-06T17:21:43Z",
+    "credential_updated_at": "2026-11-06T17:21:43Z",
+    "refresh_ok": true,
+    "channel_match": true,
+    "handle": "@techno-inno",
+    "scopes": [
+      "youtube.force-ssl",
+      "youtube.readonly",
+      "youtube.upload"
+    ],
+    "edit_scope_present": true,
+    "refresh_token_expires_in": null,
+    "durable": "no 7-day expiry reported; Production mode confirmed by the absence of refresh-token expiry"
+  },
+  "readiness_state": {
+    "blockers_remaining": ["automatic_offhost_backup_not_confirmed"],
+    "cleared_today": [
+      "outbound_alert_delivery_not_confirmed",
+      "complete_live_cycle_not_validated",
+      "daily_times_not_selected (12:00/20:00 configured)",
+      "budget_caps_zero (2.00/45.00 configured)",
+      "spending_not_authorized",
+      "automatic_publication_not_authorized",
+      "durable_google_access_not_confirmed (durable Production grant verified)"
+    ],
+    "scheduler_enabled": false,
+    "worker_beat": "stopped",
+    "account_approved_for_publication": false
+  },
+  "decision_pending": "owner chose no off-host backup for now; the scheduler stays blocked by the readiness contract until either a real always-available backup destination exists or the owner explicitly waives the requirement (a deliberate contract change, not a silent one)"
+}

@@ -1,0 +1,21 @@
+{
+  "theme": "A narrow clear stream of water flows slowly into a small turquoise ceramic basin, fixed macro camera and simple continuous motion. Gentle synthesized water-flow sound, no music, no people or lettering. Two complementary continuous views of the same basin.",
+  "visibility": "private",
+  "channel": "@techno-inno",
+  "maximum_additional_usd": "1.00",
+  "quoted_video_generation_usd": "0.80",
+  "maximum_reserved_stages_usd": "0.86",
+  "audio": "original synthesized water-flow effects, no music",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "zh-CN"
+  ],
+  "hashtags_in_all_descriptions": true,
+  "automatic_regeneration": false,
+  "scheduler_activation": false,
+  "requires_fresh_explicit_human_budget_authorization": true
+}

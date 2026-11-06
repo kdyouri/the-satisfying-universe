@@ -1,0 +1,129 @@
+purpose:
+  stands_in_for: Google OAuth refresh, expected-channel read, resumable upload, video metadata
+    updates and processing reads
+  unblocks: Verify the fixed video upload and six-language public update without test posts on Google
+assumptions:
+  - id: live-six-language-publication
+    status: supported
+    claim: The owner's existing video is public with English default and six verified localized
+      title/description pairs after personal edit consent and the authorized API operation.
+    reason: The real publication endpoint returned HTTP 200 and Google's authorized readback
+      confirmed the expected video/channel, public visibility, processed media and all translations.
+    verification: On 2026-11-05 video qNsEQFHoMdk returned matching native hl=en/fr/es/it/ru/zh-CN
+      metadata; an unauthenticated YouTube oEmbed request returned 200 and author TechnoInno.
+      No regional restriction was reported. One Publication, two generations and five model-usage
+      records remain; AI cost is 0.800526 USD and scheduler/automatic spending/publication stay off.
+      No reupload, paid translation or new AI call occurred. This establishes one supervised
+      publication, not durable unattended consent or guaranteed worldwide recommendation reach.
+    source: docs/evidence/youtube-multilingual-publication-result-2026-11-05.json;
+      docs/evidence/youtube-multilingual-public-live-2026-11-05.json;
+      docs/evidence/youtube-public-access-2026-11-05.json
+    updated_at: '2026-11-05'
+  - id: six-language-caller-update-safety
+    status: supported
+    claim: In the eleven publication scenarios, the caller updated only the existing video,
+      verified six translations before making it public, and reconciled lost responses by reading first.
+    reason: Actual protected handlers, HTTP requests and PostgreSQL state were exercised;
+      recorded PUT bodies preserved category, tags, extra translations and writable status settings.
+    verification: On 2026-11-05 all 98 regressions passed, including eleven publication cases,
+      owner-only routes, strict confirmation and cookie-CSRF rejection. Missing edit scope,
+      wrong channel, pending processing, regional restrictions, failed or mismatching metadata
+      prevented the public write. Lost metadata/public responses resumed without duplicate
+      writes or media uploads. A concurrent lock blocked updates. No model usage was created.
+      Delayed mock responses initially referenced reset fixture state; snapshots fixed that
+      fixture bug before the final full run. This establishes caller behavior, not live edit consent.
+    source: tests/test_youtube_upload.py; docs/evidence/youtube-multilingual-tests-2026-11-05.xml;
+      postman/mocks/youtube-upload/default.js
+    updated_at: '2026-11-05'
+  - id: metadata-update-provider-contract
+    status: supported
+    claim: videos.update supports localizations and defaultLanguage, and needs an editing
+      OAuth scope rather than the existing upload/read-only grant.
+    reason: Google's official current method lists localizations and youtube.force-ssl;
+      part replacement requires preserving fields explicitly in each included part.
+    verification: Official docs read on 2026-11-05. Live i18nLanguages confirmed en, fr, es,
+      it, ru and zh-CN. Existing grant has upload/readonly only. Orbit returned a Partial
+      brief with incomplete localization and scope guidance; primary Google docs governed
+      actual fields. Signed-in owner-mock discovery remains unavailable due to the known
+      Postman Keychain crash; the existing contract-derived local stand-in was extended.
+    source: https://developers.google.com/youtube/data/reference/rest/v3/videos/update;
+      docs/evidence/youtube-localization-orbit-integration-2026-11-05.json
+    updated_at: '2026-11-05'
+  - id: live-private-transfer-and-processing
+    status: supported
+    claim: The installed API transferred the sonorized preview to the exact channel privately,
+      and Google processed it successfully in HD.
+    reason: An owner-authorized API POST created one video; read-only videos.list reconciliation
+      confirmed the channel, private status, uploadStatus processed and processingStatus succeeded.
+    verification: Video qNsEQFHoMdk on 2026-11-05; one Publication, two existing generations,
+      five unchanged model-usage entries and 0.800526 USD confirmed AI cost. Scheduler and
+      public publishing remain disabled. The synthetic-media flag was sent true but is not
+      echoed by Google; its stored value is not independently established.
+    source: docs/evidence/youtube-private-upload-live-2026-11-05.json;
+      docs/evidence/youtube-private-upload-verified-2026-11-05.json
+    updated_at: '2026-11-05'
+  - id: resumable-progress-contract
+    status: supported
+    claim: A saved session accepts zero-length PUT progress probes and returns acknowledged ranges
+      or the original completed video response.
+    reason: Google's official resumable upload guide explicitly defines this protocol.
+    verification: Official guide read on 2026-11-05; initiation Location, 308 Range, completion
+      and interrupted-transfer reconciliation were checked against the implementation.
+    source: https://developers.google.com/youtube/data/guides/using_resumable_upload_protocol
+    updated_at: '2026-11-05'
+  - id: private-upload-caller-safety
+    status: supported
+    claim: In the local cases, the caller made at most one initiation POST and retained
+      the same session/video across partial progress, interruption and repeated API calls.
+    reason: Actual API handlers, outgoing HTTP, encrypted PostgreSQL state and media inspection ran.
+    verification: Fourteen tests passed on 2026-11-05, including private metadata, partial ack,
+      lost final response, midway timeout, delayed/failed processing, wrong channel,
+      revoked grant, bad Location, ambiguous start, concurrent lock and changed-file replay.
+      API paths reject missing owner auth, public visibility and arbitrary file paths.
+      Credentials/session URLs remain encrypted and no AI ledger charge is created.
+    source: tests/test_youtube_upload.py; docs/evidence/youtube-upload-tests-2026-11-05.xml
+    updated_at: '2026-11-05'
+  - id: binary-fidelity-in-simulation
+    status: unknown
+    claim: The local mock receives the identical binary upload bytes sent by the caller.
+    reason: Postman's local gateway decodes binary into text before the Node handler,
+      changing its observable byte length. Range/header/control behavior is testable;
+      this stand-in cannot establish a media checksum or actual Google decoding.
+    verification: Observed decoded byte length differed from Content-Length for synthetic MP4.
+      The mock therefore acknowledges declared lengths/ranges, not a checksum. A real
+      private upload and Google's processing result are required for end-to-end media proof.
+    source: postman/mocks/youtube-upload/default.js; docs/YOUTUBE_UPLOAD_CONTRACT.md
+    updated_at: '2026-11-05'
+  - id: public-discovery-coverage
+    status: conflicting
+    claim: Orbit's returned collection alone specifies the complete upload contract.
+    reason: The integration brief marked fit Partial, omitted OAuth/resume/processing,
+      and contained unverified snippet.file/status.madeForKids example fields.
+    verification: Used Orbit's chosen ID unchanged for integrate, then used Google's primary
+      documentation for actual fields, auth, notifications and resumable transfer. No
+      collection credential was needed. Owner-mock lookup was skipped because the known
+      Postman Keychain failure prevents signed-in discovery.
+    source: docs/evidence/youtube-upload-orbit-integration-2026-11-05.json;
+      https://developers.google.com/youtube/data/reference/rest/v3/videos/insert
+    updated_at: '2026-11-05'
+  - id: reusable-workflow-regression
+    status: supported
+    claim: Shared runner changes preserve legacy behavior in the recorded local regressions.
+    reason: Actual caller HTTP, PostgreSQL state and FFmpeg were exercised after the changes.
+    verification: All 119 regressions and fourteen legacy OpenRouter scenarios passed on
+      2026-11-05. New workflow tests cover distinct concepts/media/translations, unknown paid
+      writes, bounded recovery, configured budgets and private/public authorization. No new
+      real paid call or upload occurred; synthetic results do not establish provider quality.
+    source: docs/evidence/production-workflow-tests-2026-11-05.xml;
+      docs/evidence/production-legacy-openrouter-regression-2026-11-05.json;
+      docs/evidence/production-workflow-simulation-2026-11-05.json
+    updated_at: '2026-11-05'
+fingerprints:
+  - id: youtube-six-language-update-local
+    date: '2026-11-05'
+    commit: null
+    cli: 1.80.0
+  - id: youtube-private-upload-local
+    date: '2026-11-05'
+    commit: null
+    cli: 1.80.0

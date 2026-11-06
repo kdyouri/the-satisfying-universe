@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "authorization": {
+    "scope": "one private native-audio video trial",
+    "maximum_additional_usd": "1.70",
+    "channel": "@techno-inno",
+    "duration_seconds": 15,
+    "resolution": "1080p",
+    "aspect_ratio": "9:16",
+    "generate_audio": true,
+    "postproduction": false
+  },
+  "deployment": {
+    "api_healthy": true,
+    "api_image": "sha256:b3e633be7ed40f1c64c942e1f0417b0d238732b2502634af0244efbb5f47aa4f",
+    "source_backup": "/opt/technoinno/deploy-backups/native-trial-scope-20261106",
+    "account_wide_spending_authorized": false,
+    "account_wide_publishing_authorized": false,
+    "daily_scheduler_enabled": false,
+    "daily_budget_usd": "0",
+    "monthly_budget_usd": "0"
+  },
+  "preflight": {
+    "openrouter_key_verified": true,
+    "video_model": "google/gemini-omni-1.2-flash",
+    "quoted_video_generation_usd": "1.563840",
+    "native_audio_supported": true,
+    "youtube_channel_verified": "@techno-inno",
+    "youtube_upload_scopes_present": true,
+    "all_preflight_calls_free": true
+  },
+  "execution": {
+    "job_status": "owner_attention",
+    "video_requests_submitted": 1,
+    "generation_records": 1,
+    "provider_status": "failed",
+    "provider_final_cost_usd": null,
+    "provider_returned_final_cost": false,
+    "video_generation_usage_status": "reserved",
+    "video_generation_reserved_usd": "1.563840",
+    "creative_calls": 1,
+    "creative_actual_usd": "0.000098",
+    "quality_reviews": 0,
+    "video_file_created": false,
+    "youtube_uploads": 0,
+    "reservation_released": false,
+    "authorization_consumed": true,
+    "retry_or_regeneration_authorized": false
+  },
+  "accounting_after_run": {
+    "jobs": 4,
+    "generations": 7,
+    "publications": 2,
+    "usage_records": 20,
+    "cumulative_actual_usd": "2.402543",
+    "cumulative_held_usd": "1.863840",
+    "new_actual_usd": "0.000098",
+    "new_held_usd": "1.563840"
+  },
+  "validation": {
+    "targeted_tests_passed": 24,
+    "targeted_tests_deselected": 29,
+    "simulated_providers_used_for_tests": true,
+    "live_video_generation_succeeded": false
+  }
+}

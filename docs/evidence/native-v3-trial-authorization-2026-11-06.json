@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "operation": "owner:native-audio-private-trial:v3",
+  "owner_instruction": "Essayer un autre modèle audio natif après vérification du meilleur équilibre qualité/prix",
+  "model_selection": {
+    "method": "free live catalogue read cross-checked with prior in-house measured quality",
+    "native_audio_capable_models_found": 19,
+    "verified_15s_1080p_916_audio_candidates": {
+      "google/gemini-omni-1.2-flash": "1.563840 USD per 15s; excluded, two identical terminal provider failures",
+      "alibaba/wan-3.0": "3.00 USD per 15s; quality unmeasured",
+      "alibaba/wan-3.0-prime": "4.20 USD per 15s",
+      "black-forest-labs/flux-3-video": "4.35 USD per 15s",
+      "bytedance/seedance-2.0": "token-based pricing, not verifiable as a fixed quote; excluded by contract",
+      "kwaivgi/kling-v3.0-std": "1.89 USD but 720p maximum; excluded",
+      "minimax/hailuo-3": "1.95 USD but 2K only; excluded"
+    },
+    "selected": "google/veo-3.1-lite native audio, one 8-second generation",
+    "selection_reason": "the only candidate with measured in-house quality (82/100 and 91/100 on earlier completed trials) and the lowest price (0.08 USD/s, 0.64 USD per 8s)",
+    "owner_choice": "Veo 3.1 Lite native 8s with a 1.00 USD cap"
+  },
+  "authorization": {
+    "maximum_additional_usd": "1.00",
+    "theme": "free subject chosen by the creative model, avoiding recent concepts",
+    "channel": "@techno-inno",
+    "visibility": "private",
+    "duration_seconds": 8,
+    "resolution": "1080p",
+    "aspect_ratio": "9:16",
+    "generate_audio": true,
+    "postproduction": false,
+    "scheduler_activation": false,
+    "authorization_reference": "owner-instruction-2026-11-06-native-trial-v3-cap-1usd"
+  },
+  "deployment": {
+    "api_image": "sha256:45b5d00a1b2c3f1594f9a4e4779e393f8f567f1fca63fb1fd6394fb1120f2b70",
+    "source_rollback": "/opt/technoinno/deploy-backups/native-trial-v3-20261106",
+    "video_model_env_updated": "google/gemini-omni-1.2-flash -> google/veo-3.1-lite",
+    "env_backup": "/opt/technoinno/.env.before-native-v3-20261106",
+    "local_regression_tests": "182 passed, 0 skipped",
+    "test_evidence": "docs/evidence/native-v3-veo-tests-2026-11-06.xml"
+  },
+  "free_preflight": {
+    "global_flags_off": true,
+    "budget_caps_zero": true,
+    "openrouter_key_ok": true,
+    "model_supports_8s_1080p_916_audio": true,
+    "model_expiration": null,
+    "quoted_generation_usd": "0.640000",
+    "quote_within_0_70_ceiling": true,
+    "youtube_refresh_ok": true,
+    "youtube_channel_match": true,
+    "checked_at": "2026-11-06T16:01:22Z"
+  },
+  "planned_stages_reserved_usd": {
+    "creative_max": "0.01",
+    "generation_max": "0.70",
+    "quality_review_max": "0.05"
+  },
+  "prohibitions": [
+    "no automatic retry or regeneration of a failed or uncertain paid call",
+    "no release of any existing reservation",
+    "no public upload; private only",
+    "global recurring flags and caps remain off/zero"
+  ]
+}

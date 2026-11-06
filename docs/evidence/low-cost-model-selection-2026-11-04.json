@@ -1,0 +1,92 @@
+{
+  "selected_on": "2026-11-04",
+  "owner_preference": "Lower cost with acceptable quality; prioritize cost per accepted video",
+  "quality_validated_on_brand_content": false,
+  "configured_candidates": {
+    "CREATIVE_MODEL": "google/gemma-4-26b-a4b-it",
+    "QUALITY_MODEL": "google/gemini-3.1-flash-lite",
+    "VIDEO_MODEL": "google/veo-3.1-lite"
+  },
+  "creative": {
+    "model": "google/gemma-4-26b-a4b-it",
+    "input_usd_per_million_tokens": "0.027000000",
+    "output_usd_per_million_tokens": "0.08000000"
+  },
+  "quality": {
+    "model": "google/gemini-3.1-flash-lite",
+    "input_usd_per_million_tokens": "0.25000000",
+    "output_usd_per_million_tokens": "1.5000000",
+    "local_technical_checks": "FFmpeg/FFprobe first",
+    "full_motion_review_required": true
+  },
+  "video": {
+    "model": "google/veo-3.1-lite",
+    "aspect_ratio": "9:16",
+    "resolution": "1080p",
+    "generate_audio": false,
+    "clip_duration_seconds": 8,
+    "clip_count": 2,
+    "total_seconds": 16,
+    "sku": "duration_seconds_without_audio",
+    "usd_per_second": "0.05",
+    "generation_usd_per_attempt": "0.80",
+    "720p_variant_usd_per_attempt": "0.48",
+    "source": "https://openrouter.ai/api/v1/videos/models"
+  },
+  "alternate_720p": {
+    "model": "x-ai/grok-imagine-video-1.5-lite",
+    "total_seconds": 15,
+    "sku": "cents_per_video_output_second_720p",
+    "cents_per_second": "3",
+    "usd_per_attempt": "0.45",
+    "generate_audio_capability": "not stated in catalogue",
+    "1080p": "upscaled from 720p; not selected"
+  },
+  "monthly_generation_only": {
+    "target_originals": 60,
+    "no_retries_usd": "48.00",
+    "25_percent_extra_full_attempts": 75,
+    "25_percent_extra_attempts_usd": "60.00",
+    "two_attempts_each_worst_case_usd": "96.00"
+  },
+  "excluded": [
+    {
+      "model": "bytedance/seedance-1-5-pro",
+      "reason": "Removal announced for 2026-11-11; max clip length 12 seconds",
+      "source": "https://openrouter.ai/bytedance/seedance-1-5-pro"
+    },
+    {
+      "model": "tbc/mischief-1",
+      "reason": "Lowest price is image-to-video and landscape only; incompatible with required native portrait pipeline"
+    }
+  ],
+  "future_execution_rules": {
+    "quote_from_fresh_catalogue_before_paid_submission": true,
+    "unknown_sku_or_unit": "stop",
+    "max_video_attempts": 2,
+    "minimum_quality_score": 80,
+    "severe_defects": "reject",
+    "automatic_more_expensive_model_fallback": false,
+    "retired_or_unavailable_selected_model": "stop and review",
+    "max_completion_tokens_required": true
+  },
+  "enforcement_status": "Model IDs configured; paid generation and QA adapters are not implemented yet. Rules must be enforced when implementing them.",
+  "spending_authorized": false,
+  "publishing_authorized": false,
+  "daily_budget_usd": "0",
+  "monthly_budget_usd": "0",
+  "paid_requests": 0,
+  "catalogue_counts": {
+    "video_models": 31,
+    "all_models": 454
+  },
+  "sources": [
+    "https://openrouter.ai/api/v1/videos/models",
+    "https://openrouter.ai/api/v1/models",
+    "https://openrouter.ai/google/veo-3.1-lite",
+    "https://openrouter.ai/google/gemma-4-26b-a4b-it",
+    "https://openrouter.ai/google/gemini-3.1-flash-lite"
+  ],
+  "configured_on_vps": true,
+  "vps_verification": "low-cost-vps-verification-2026-11-04.json"
+}

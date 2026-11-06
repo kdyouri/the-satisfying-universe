@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-11-04",
+  "authoritative_servers": [
+    "dns1.registrar-servers.com",
+    "dns2.registrar-servers.com"
+  ],
+  "studio_A": [
+    "203.161.61.3"
+  ],
+  "studio_AAAA": [],
+  "root_A": [
+    "203.161.61.3"
+  ],
+  "agent_changed_dns": false
+}

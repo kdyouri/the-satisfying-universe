@@ -1,0 +1,67 @@
+purpose:
+  stands_in_for: OpenRouter catalogues, structured chat, asynchronous video generation and download
+  unblocks: Verify one manual video and bounded failure handling without buying test generations
+assumptions:
+  - id: official-api-contract
+    status: supported
+    claim: Video submission returns an ID; terminal polling includes usage.cost; content serves MP4.
+    reason: Official API documentation and current model catalogues support this contract.
+    verification: Official documentation and public catalogues inspected on 2026-11-04.
+    source: https://openrouter.ai/docs/guides/overview/multimodal/video-generation
+    updated_at: '2026-11-04'
+  - id: synthetic-caller-behavior
+    status: supported
+    claim: The real caller handles successful and ambiguous requests with bounded durable spending.
+    reason: Nine HTTP scenarios exercised the actual adapter, PostgreSQL ledger and FFmpeg assembly.
+    verification: Success/resume, price rise, chat error, ambiguous video error/timeout,
+      missing cost, failed generation, cost overrun and wrong media type passed. Unknown
+      paid submissions were not repeated; reservations remained and overruns froze spending.
+      Additional checks rejected untrusted identifiers and oversized downloads. Synthetic
+      media and scores establish no real video quality or upstream acceptance.
+    source: docs/evidence/openrouter-simulation-2026-11-04.json
+    updated_at: '2026-11-04'
+  - id: owner-mock-discovery
+    status: unknown
+    claim: A provider-owned reusable mock is available.
+    reason: Signed-in Postman discovery is unavailable due to macOS Keychain failure.
+    verification: Local CLI status failed; using a documentation-derived local stand-in.
+    source: docs/FIRST_VIDEO.md
+    updated_at: '2026-11-04'
+  - id: practical-review-routing-and-audio
+    status: supported
+    claim: In the 14 local scenarios, the caller retained audible music in the review
+      payload and did not regenerate after minor, major, uncertain or low-score findings.
+    reason: Actual HTTP serialization, PostgreSQL state and FFmpeg media processing
+      were exercised with the revised structured-review contract.
+    verification: On 2026-11-05, minor findings were accepted; normally visible major
+      findings routed to local editing; uncertainty, low scores and unobservable audio
+      routed to manual review. All completed review scenarios made four simulated paid
+      POSTs only and resume made none. The video bytes in the observed request included
+      AAC audio. The other budget and ambiguous-outcome cases retained their protections.
+      These synthetic findings do not establish real model judgment or provider acceptance
+      of the new schema. Prior real first-video evidence remains historical.
+    source: docs/evidence/openrouter-simulation-audio-2026-11-05.json;
+      scripts/verify_openrouter_simulation.py; tests/test_practical_review.py;
+      tests/test_production.py; tsu/production.py
+    updated_at: '2026-11-05'
+  - id: reusable-workflow-regression
+    status: supported
+    claim: Shared runner changes preserve legacy behavior in the recorded local regressions.
+    reason: Actual caller HTTP, PostgreSQL state and FFmpeg were exercised after the changes.
+    verification: All 119 regressions and fourteen legacy OpenRouter scenarios passed on
+      2026-11-05. New workflow tests cover distinct concepts/media/translations, unknown paid
+      writes, bounded recovery, configured budgets and private/public authorization. No new
+      real paid call or upload occurred; synthetic results do not establish provider quality.
+    source: docs/evidence/production-workflow-tests-2026-11-05.xml;
+      docs/evidence/production-legacy-openrouter-regression-2026-11-05.json;
+      docs/evidence/production-workflow-simulation-2026-11-05.json
+    updated_at: '2026-11-05'
+fingerprints:
+  - id: local-first-video
+    date: '2026-11-04'
+    commit: null
+    cli: 1.80.0
+  - id: local-balanced-audio-v2
+    date: '2026-11-05'
+    commit: null
+    cli: 1.80.0

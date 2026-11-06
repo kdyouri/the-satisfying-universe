@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "84c7e5cfc6065a72f2fc03c73c4bc6e028adabb1dd2303c41b93597fee26cecf",
+  "files": {
+    "tsu/api.py": "6bfbeed8aa44fd9cd93fc40f5c64c782a66125706be260b8fd3333f4ca915a85",
+    "deploy/review-contextual-sound-trial.py": "220b9d5c03e37be57eb9f961d87871f73505b97b92e966a9663bd4cde3236974"
+  },
+  "secrets_included": false,
+  "scheduling_activation": false,
+  "local_browser_auth_tests_passed": 30,
+  "unrelated_postgres_concurrency_test_skipped": 1,
+  "deployed": true,
+  "subsequent_final_release": "docs/evidence/review-upload-timeout-release-2026-11-05.json",
+  "public_browser_login_verified": true,
+  "owner_reconnected": true
+}

@@ -1,0 +1,26 @@
+{
+  "workflow_implemented": true,
+  "scheduler_enabled": false,
+  "configured_local_times": [],
+  "timezone": "Africa/Casablanca",
+  "blockers": [
+    "spending_not_authorized",
+    "budget_caps_zero",
+    "automatic_publication_not_authorized",
+    "daily_times_not_selected",
+    "durable_google_access_not_confirmed",
+    "complete_live_cycle_not_validated",
+    "account_publication_not_authorized"
+  ],
+  "automatic_regeneration": false,
+  "live_validation_completed": false,
+  "account_publication_approved": false,
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "zh-CN"
+  ]
+}

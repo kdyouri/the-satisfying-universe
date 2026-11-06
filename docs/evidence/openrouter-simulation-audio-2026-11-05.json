@@ -1,0 +1,107 @@
+{
+  "provider": "local Postman HTTP stand-in",
+  "real_credits_used": false,
+  "database": "disposable PostgreSQL",
+  "scenarios": [
+    {
+      "scenario": "success",
+      "passed": true,
+      "paid_post_count": 4,
+      "failure": null,
+      "http_event_count": 13
+    },
+    {
+      "scenario": "qa_minor",
+      "passed": true,
+      "paid_post_count": 4,
+      "failure": null,
+      "http_event_count": 13
+    },
+    {
+      "scenario": "qa_visible_major",
+      "passed": true,
+      "paid_post_count": 4,
+      "failure": null,
+      "http_event_count": 13
+    },
+    {
+      "scenario": "qa_uncertain",
+      "passed": true,
+      "paid_post_count": 4,
+      "failure": null,
+      "http_event_count": 13
+    },
+    {
+      "scenario": "qa_low_score",
+      "passed": true,
+      "paid_post_count": 4,
+      "failure": null,
+      "http_event_count": 13
+    },
+    {
+      "scenario": "qa_audio_unobservable",
+      "passed": true,
+      "paid_post_count": 4,
+      "failure": null,
+      "http_event_count": 13
+    },
+    {
+      "scenario": "price_increase",
+      "passed": true,
+      "paid_post_count": 0,
+      "failure": "The video price increased; stop before spending",
+      "http_event_count": 3
+    },
+    {
+      "scenario": "chat_error",
+      "passed": true,
+      "paid_post_count": 1,
+      "failure": "Provider HTTP 503; paid POST was not retried",
+      "http_event_count": 4
+    },
+    {
+      "scenario": "submit_error",
+      "passed": true,
+      "paid_post_count": 2,
+      "failure": "Provider HTTP 503; paid POST was not retried",
+      "http_event_count": 5
+    },
+    {
+      "scenario": "submit_timeout",
+      "passed": true,
+      "paid_post_count": 2,
+      "failure": "Provider connection failed; do not repeat a paid submission",
+      "http_event_count": 5
+    },
+    {
+      "scenario": "missing_cost",
+      "passed": true,
+      "paid_post_count": 2,
+      "failure": "Terminal video has no cost evidence; retain reservation",
+      "http_event_count": 7
+    },
+    {
+      "scenario": "failed_video",
+      "passed": true,
+      "paid_post_count": 2,
+      "failure": "Video generation terminated without a finished clip",
+      "http_event_count": 7
+    },
+    {
+      "scenario": "overrun",
+      "passed": true,
+      "paid_post_count": 2,
+      "failure": "Video cost exceeded its reservation; spending frozen",
+      "http_event_count": 7
+    },
+    {
+      "scenario": "bad_media",
+      "passed": true,
+      "paid_post_count": 2,
+      "failure": "Video download has an unexpected media type",
+      "http_event_count": 8
+    }
+  ],
+  "boundary_checks": "fixed origin, job IDs, download size/cleanup, rounded costs",
+  "limitations": "Synthetic media and scores establish no real provider quality"
+}

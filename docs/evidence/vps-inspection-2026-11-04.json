@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-04",
+  "method": "Owner-authorized SSH, read-only inspection",
+  "host": "203.161.61.3",
+  "ssh_user": "root",
+  "ssh_port": 22,
+  "os": "Ubuntu 24.04.5 LTS",
+  "cpus": 1,
+  "memory_kib": 984676,
+  "disk_free_approx_gb": 16,
+  "public_listeners": [22],
+  "docker_installed": false,
+  "web_server_installed": false,
+  "studio_dns": {"host": "studio.technoinno.live", "addresses": ["203.161.61.3"]},
+  "bootstrap_executed": false,
+  "deployment_approval": "pending explicit owner approval after automatic review rejection"
+}

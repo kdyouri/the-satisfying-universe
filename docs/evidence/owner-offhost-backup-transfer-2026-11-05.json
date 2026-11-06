@@ -1,0 +1,18 @@
+{
+  "directory": "/Users/macbook/Documents/ChatGPT/MyVideos/the-satisfying-universe/backups/20261105T210649Z",
+  "encrypted_files": [
+    {
+      "name": "recovery.env.age",
+      "bytes": 1351,
+      "sha256": "1ddec85ff04607db1bfce93513c2156ea20e608159d87d62bbe0ddefa3c3cccf"
+    },
+    {
+      "name": "database-media.tar.age",
+      "bytes": 79594664,
+      "sha256": "0dc9b23538182d395399368df75637dea798f213f4bf80194563a600761f9779"
+    }
+  ],
+  "private_identity_in_backup": false,
+  "automatic_schedule": false,
+  "new_paid_calls": 0
+}

@@ -1,0 +1,19 @@
+{
+  "stage": "quality_balanced_audio_v2_supervised_diagnostic1",
+  "http_status": 400,
+  "provider": "Google AI Studio",
+  "provider_message": "Request contains an invalid argument.",
+  "provider_status": "INVALID_ARGUMENT",
+  "cause_isolated": false,
+  "successful_compatibility_changes": [
+    "compact native schema; original full Pydantic validator retained",
+    "Google AI Studio standard; Flex and priority variants excluded",
+    "longer 300-second review read deadline"
+  ],
+  "real_review_score": 91,
+  "additional_calls_authorized_and_used": 2,
+  "sources": [
+    "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/control-generated-output",
+    "https://openrouter.ai/docs/guides/routing/provider-selection"
+  ]
+}

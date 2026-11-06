@@ -1,0 +1,28 @@
+{
+  "profile": {
+    "version": "balanced_audio_v2",
+    "audio_mode": "calm_music_in_postproduction",
+    "audio_ready": true,
+    "audio_target_lufs": -24,
+    "native_generated_audio": false,
+    "crossfade_seconds": 0.2,
+    "quality_minimum_score": 80,
+    "quality_visibility": "normal_playback_on_phone",
+    "minor_defects": "accepted",
+    "visible_major_defects": "timestamped_evidence_required",
+    "repair_priority": "local_edit",
+    "uncertain_findings": "manual_review",
+    "automatic_regeneration": false,
+    "duration_seconds": 15.8,
+    "soundtrack_sha256": "df049ef9572d4353d1e2b344a6653bef63bfd2be898bba6a33823e3194945f2d",
+    "soundtrack_source": "original local synthesis; no external samples"
+  },
+  "technical_pass": true,
+  "audio_levels": {
+    "mean_db": -25.9,
+    "peak_db": -15.0
+  },
+  "new_paid_calls": 0,
+  "ai_review": "not run; preview only",
+  "memory_limit_mib": 384
+}

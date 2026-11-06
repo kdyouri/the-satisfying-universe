@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "operation": "owner:native-audio-private-trial:v3",
+  "outcome": "completed_private — first complete end-to-end native-audio cycle",
+  "authorization": {
+    "maximum_additional_usd": "1.00",
+    "model": "google/veo-3.1-lite",
+    "duration_seconds": 8,
+    "theme": "free subject chosen by the creative model",
+    "authorization_reference": "owner-instruction-2026-11-06-native-trial-v3-cap-1usd"
+  },
+  "execution": {
+    "creative_settled_usd": "0.000149",
+    "concept": "A macro study of a single, dense sphere of iridescent liquid chrome slowly collapsing and spreading across a dark obsidian surface, emphasizing surface tension and metallic reflections.",
+    "generation_settled_usd": "0.640000",
+    "generation_status": "completed",
+    "quality_review_settled_usd": "0.000606",
+    "total_trial_actual_usd": "0.640755",
+    "unsettled_reservations": 0,
+    "within_cap": true
+  },
+  "video": {
+    "youtube_id": "3a2YvpExzac",
+    "url": "https://www.youtube.com/watch?v=3a2YvpExzac",
+    "visibility": "private",
+    "channel_id": "UC8DbuevZRxVTWxltG9oDFRw",
+    "sha256": "fe74e89b578fad347e6433ad87c1c2654195f3121e80f596dd70449d9bcea86d",
+    "bytes": 9795092,
+    "technical_pass": true,
+    "audio_levels_db": {"mean": -21.1, "peak": -4.0},
+    "google_verification": {
+      "upload_status": "processed",
+      "processing_status": "succeeded",
+      "definition": "hd",
+      "duration_reported": "PT9S",
+      "default_language": "en"
+    }
+  },
+  "quality": {
+    "score": 97,
+    "severe_defects": 0,
+    "automatic_policy_decision": "manual_review",
+    "manual_review_reason": "the review judged the native audio a light continuous electronic hum lacking organic liquid textures synchronized with the action (audio-coherence finding, remedy manual_review)",
+    "owner_decision": {
+      "decision": "accepted_for_private_upload",
+      "reference": "owner-chat-acceptance-2026-11-06-liquid-chrome-sphere-fe74e89b",
+      "bound_sha256": "fe74e89b578fad347e6433ad87c1c2654195f3121e80f596dd70449d9bcea86d",
+      "recorded_as": "additional QualityCheck row model=owner with preserved AI finding; original AI check untouched"
+    }
+  },
+  "publication": {
+    "publication_id": "5fdca8e0-35f5-48c3-9381-ebe83cf8a6d2",
+    "languages_verified_on_google": ["en", "fr", "es", "it", "ru", "zh-CN"],
+    "translations_verified": true,
+    "hashtags_in_descriptions": true,
+    "brand_and_ai_disclosure": true,
+    "published_at": null,
+    "job_status": "completed_private"
+  },
+  "accounting_after_run": {
+    "jobs": 6,
+    "generations": 9,
+    "publications": 3,
+    "usage_records": 25,
+    "global_actual_usd": "3.043409",
+    "global_held_usd": "3.427680"
+  },
+  "global_controls": {
+    "spending_authorized": false,
+    "publishing_authorized": false,
+    "daily_scheduler": false,
+    "daily_budget_usd": "0",
+    "monthly_budget_usd": "0"
+  },
+  "limits": [
+    "one supervised trial; no recurring production authorization",
+    "the manual-review acceptance is bound to this private job/hash only",
+    "the two failed native reservations (v1/v2, 2x1.563840 USD) remain held without cost evidence"
+  ]
+}

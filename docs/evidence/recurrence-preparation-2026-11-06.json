@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Africa/Casablanca",
+  "operation": "recurrence preparation",
+  "owner_decisions_applied_to_vps_env": {
+    "publication_mode": "public automatic (original brief: two videos/day on YouTube)",
+    "production_times": ["12:00", "20:00"],
+    "timezone": "Africa/Casablanca",
+    "daily_budget_usd": "2.00",
+    "monthly_budget_usd": "45.00",
+    "spending_authorized": true,
+    "publishing_authorized": true,
+    "production_live_validated": true,
+    "justification_live_validated": "complete supervised native-audio cycle completed 2026-11-06 (v3 trial: generation, technical pass, review 97/100, owner-accepted manual review, private upload, six-language verification) with owner review",
+    "env_backup": "/opt/technoinno/.env.before-recurring-20261106"
+  },
+  "still_disabled_by_design": {
+    "enable_daily_scheduler": false,
+    "worker_beat": "stopped",
+    "account_approved_for_publication": false,
+    "reason": "two readiness blockers remain; schedule_production requires zero blockers"
+  },
+  "readiness_blockers_remaining": [
+    {
+      "blocker": "outbound_alert_delivery_not_confirmed",
+      "status": "SMTP credentials unavailable: Gmail app passwords require 2-Step Verification, which is not enabled on admin.technoinno@gmail.com (owner saw 'not available for your account')",
+      "owner_action": "enable 2-Step Verification, then create an app password and provide it privately; agent configures SMTP, sends one test, owner confirms receipt, then OUTBOUND_ALERTS_CONFIRMED=true"
+    },
+    {
+      "blocker": "automatic_offhost_backup_not_confirmed",
+      "status": "owner chose 'later'; a one-time supervised backup+restore drill already passed on 2026-11-05",
+      "owner_action": "choose an always-available destination (this Mac via launchd is not 24/7; a remote server/S3 destination is)",
+      "note": "scheduler stays blocked until this is real"
+    }
+  ],
+  "additional_owner_actions_for_unattended_operation": [
+    "Google OAuth app is in Testing mode: refresh tokens expire after 7 days (Google documentation). Switch the app to Production in Google Console or accept reconnection at least weekly; this is a personal Google Console action",
+    "recurring videos use native_audio_v5 (veo-3.1-lite, 8s, ~0.65 USD each); 12:00 and 20:00 slots at 2.00 USD/day, 45.00 USD/month caps"
+  ],
+  "verified_state_after_configuration": {
+    "readiness_blockers_remaining": 2,
+    "scheduler_enabled": false,
+    "api_healthy": true,
+    "no_worker_running": true
+  }
+}
