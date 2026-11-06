@@ -146,17 +146,21 @@ def banner(path, width=2560, height=1440):
     glow = glow.filter(ImageFilter.GaussianBlur(w * 0.10))
     img = Image.alpha_composite(img, glow)
 
-    # quiet macro ripples across the banner
+    # quiet macro ripples centered on the orb
     rings = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     dr = ImageDraw.Draw(rings)
-    cx, cy = w * 0.26, h * 0.52
+    # YouTube safe area: 1546x423 centered -> x [507,2053], y [508,931] at 2560x1440
+    safe_x0, safe_x1 = w / 2 - 1546 / 2, w / 2 + 1546 / 2
+    safe_y0, safe_y1 = h / 2 - 423 / 2, h / 2 + 423 / 2
+    orb_d = int(423 * 0.96)
+    cx = safe_x0 + orb_d / 2 + h * 0.055
+    cy = h / 2
     for i in range(9):
         r = (0.06 + i * 0.055) * h
         alpha = max(18, 150 - i * 16)
         dr.ellipse([cx - r, cy - r, cx + r, cy + r], outline=PEARL + (alpha,), width=max(1, h // 480))
     img = Image.alpha_composite(img, rings.filter(ImageFilter.GaussianBlur(h * 0.004)))
 
-    orb_d = int(h * 0.34)
     glow2 = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     dgl = ImageDraw.Draw(glow2)
     dgl.ellipse(
@@ -169,8 +173,8 @@ def banner(path, width=2560, height=1440):
     img.alpha_composite(orb, (int(cx - orb_d / 2), int(cy - orb_d / 2)))
 
     font_path = "/System/Library/Fonts/Helvetica.ttc"
-    text_x = w * 0.46
-    max_width = w * 0.80 - text_x
+    text_x = safe_x0 + orb_d + h * 0.085
+    max_width = safe_x1 - h * 0.02 - text_x
     tagline = "Beautiful things. Perfect moments."
     probe = ImageDraw.Draw(Image.new("RGB", (8, 8)))
 
@@ -183,15 +187,16 @@ def banner(path, width=2560, height=1440):
             size_px = int(size_px * 0.94)
         return ImageFont.truetype(font_path, 12, index=1)
 
-    name_font = fitted_font("THE SATISFYING", 0.135)
-    name2_font = fitted_font("UNIVERSE", 0.135)
-    tag_font = fitted_font(tagline, 0.056)
+    name_font = fitted_font("THE SATISFYING", 0.100)
+    name2_font = fitted_font("UNIVERSE", 0.100)
+    tag_font = fitted_font(tagline, 0.043)
 
     name = "THE SATISFYING"
     name2 = "UNIVERSE"
-    name_y = h * 0.372
-    name2_y = name_y + h * 0.132
-    tag_y = name2_y + h * 0.128
+    # vertical lockup fully inside the 423 px safe band
+    name_y = safe_y0 + (safe_y1 - safe_y0) * 0.26
+    name2_y = safe_y0 + (safe_y1 - safe_y0) * 0.55
+    tag_y = safe_y0 + (safe_y1 - safe_y0) * 0.845
     # soft shadow for legibility
     d = ImageDraw.Draw(img)
     for text, y, font, fill in (
